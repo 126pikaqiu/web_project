@@ -1,6 +1,7 @@
 package controller;
 
 import service.AccountService;
+import service.User;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -36,11 +37,12 @@ public class AccountServlet extends HttpServlet {
         HttpSession session = req.getSession();
         if(name != null && pwd != null && accoutService.login(name,pwd)) {
             resp.setStatus(200);
-            session.setAttribute("authorization",accoutService.getPermission(name));
-            session.setAttribute("username",name);
-            session.setAttribute("pwd",pwd);
+            User user = accoutService.getUser(name);
+            session.setAttribute("user",user);
+            session.setAttribute("permission",user.getPermission());
         } else {
-            session.removeAttribute("authorization");
+            session.setAttribute("permission",0);
+            session.setAttribute("user",null);
             resp.setStatus(401);
         }
     }

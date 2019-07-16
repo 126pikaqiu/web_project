@@ -5,11 +5,11 @@ package service;
  * @Date: 2019/7/16 15:30
  */
 public class Item {
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -53,38 +53,49 @@ public class Item {
         this.hot = hot;
     }
 
-    public String getYear() {
-        return year;
+    public String getTime() {
+        return time;
     }
 
-    public void setYear(String year) {
-        this.year = year;
+    public void setTime(String year) {
+        this.time = year;
     }
 
-    public Item(String id, String name, String img, String description, String video, int hot, String year) {
+    public Item(int id, String name, String img, String description, String video, int hot, String time, String location) {
         this.id = id;
         this.name = name;
         this.img = img;
         this.description = description;
         this.video = video;
         this.hot = hot;
-        this.year = year;
+        this.time = time;
+        this.location = location;
     }
 
     public Item(){}
 
-    public Item(String id, String name, int hot, String year) {
+    public Item(int id, String name, int hot, String time) {
         this.id = id;
         this.name = name;
         this.hot = hot;
-        this.year = year;
+        this.time = time;
     }
 
-    private String id;
+    private int id;
     private String name;
     private String img;
     private String description;
     private String video;
     private int hot;
-    private String year;
+    private String time;
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    private String location;
 }

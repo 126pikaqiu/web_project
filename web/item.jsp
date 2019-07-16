@@ -1,4 +1,5 @@
-<%@ page import="service.Item" %><%--
+<%@ page import="service.Item" %>
+<%@ page import="service.CollectionService" %><%--
   Created by IntelliJ IDEA.
   User: asus
   Date: 2019/7/16
@@ -6,13 +7,17 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%
-    Item item = new Item(request.getParameter("id"),"一件文物",345,"2019-07-11");
+    Item item = new Item(Integer.parseInt(request.getParameter("id")),"一件文物",345,"2019-07-11");
     item.setImg("templates/img/art_img/2.jpg");
     item.setDescription("簋是一种古代食器，用来盛装煮熟的稻、粱等食物，犹如现在的饭盆，饮宴时使用。它又是一种重要的礼器，" +
             "盛行于商、周时期，使用者一般为王侯贵族。是由当时称作“金”的青铜铸成。簋与老百姓无缘，那时穷苦百姓使用的大多是陶器。" +
             "簋和鼎配套使用，盛装上食物、牺牲等供奉在神坛上祭祀天地祖先。" +
             "周代礼制中对鼎用簋的使用有严格规定：天子九鼎八簋，诸侯七鼎六簋，大夫五鼎四簋………“九鼎八簋”是最高礼仪，只有周天子才能享用，");
     item.setVideo("templates/videos/123.mp4");
+    item.setLocation("故宫博物馆");
+//    CollectionService collectionService = new CollectionService();
+//    collectionService.init();
+//    Item item = collectionService.getItem(123);
 %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>

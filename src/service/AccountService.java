@@ -10,7 +10,6 @@ import java.util.HashMap;
  */
 public class AccountService {
     private AccountDao accountDao;
-    private HashMap<Integer,String> permissionMap = new HashMap<>();
     private static class Cryption{
         static String encrypt(String text){
             return convertMD5(text);
@@ -37,16 +36,16 @@ public class AccountService {
     }
     public void init() {
         accountDao.init();
-        permissionMap.put(0,"unauthorized");
-        permissionMap.put(1,"authorized");
-        permissionMap.put(2,"admin");
     }
     public boolean login(String name, String pwd){
         String passwordFromUser = Cryption.convertMD5(pwd);
-        String passwordFromDatabase = Cryption.decrypt(accountDao.getPwd(name));
+        String passwordFromDatabase = Cryption.decrypt(accountDao.getUser(name).getPwd());
         return passwordFromDatabase.equals(passwordFromUser);
     }
-    public String getPermission(String name) {
-        return permissionMap.get(accountDao.getPermission(name));
+    public User getUser(String name) {
+        return accountDao.getUser(name);
+    }
+    public void destroy(){
+        accountDao.destroy();
     }
 }
