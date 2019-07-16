@@ -1,8 +1,15 @@
 
-
+$(document).ready(function () {
+    initResource()
+    bindEvents()
+})
 
 function bindEvents() {
-    $(".click-img").click(function () {
-        history.go("item.jsp?id=" + $(".click-img").attr("id"))
+    $("img.click-img").click(function () {
+        window.open("item.jsp?id=" + $(".click-img").attr("id"))
     })
+}
+
+function initResource() {
+
 }

@@ -15,7 +15,6 @@
   <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
   <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link href="templates/css/header.inc.css" type="text/css" rel="stylesheet"/>
     <link href="templates/css/index.css" type="text/css" rel="stylesheet"/>
 </head>
   <body>
@@ -31,15 +30,15 @@
       <!-- 轮播（Carousel）项目 -->
       <div class="carousel-inner">
           <div class="item active">
-              <img src="templates/img/art_img/2.jpg" class="carousel-img click-img" alt="First slide">
+              <img src="templates/img/art_img/2.jpg" id=234 class="carousel-img click-img" alt="First slide">
               <div class="carousel-caption">标题 1</div>
           </div>
           <div class="item">
-              <img src="templates/img/art_img/3.jpg" class="carousel-img" alt="Second slide">
+              <img src="templates/img/art_img/3.jpg" id=123 class="carousel-img click-img" alt="Second slide">
               <div class="carousel-caption">标题 2</div>
           </div>
           <div class="item">
-              <img src="templates/img/art_img/4.jpg" class="carousel-img" alt="Third slide">
+              <img src="templates/img/art_img/4.jpg" id=446 class="carousel-img click-img" alt="Third slide">
               <div class="carousel-caption">标题 3</div>
           </div>
       </div>
@@ -53,6 +52,7 @@
           <span class="sr-only">Next</span>
       </a>
   </div>
-
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="templates/js/index.js"></script>
   </body>
 </html>
