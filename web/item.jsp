@@ -30,7 +30,7 @@
             <div class="col-md-5">
                 <img src="<%=item.getImg()%>" class="item-img" alt="文物的图片">
             </div>
-            <div class="col-md-5">
+            <div class="col-md-5 item-right-border">
                 <h2><%=item.getName()%></h2>
                 <p><%=item.getDescription()%></p>
                 <div class="btn-group" data-toggle="buttons">
@@ -42,7 +42,7 @@
                     </label>
                 </div>
             </div>
-            <div class="col-md-2 item-right-table">
+            <div class="col-md-2 item-right-border">
                 <table class="table table-hover text-center">
                     <caption class="text-center">博物推荐</caption>
                     <tbody>
