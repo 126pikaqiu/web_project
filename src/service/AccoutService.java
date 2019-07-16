@@ -1,4 +1,4 @@
-package java.service;
+package service;
 
 /**
  * @author: jiaxing liu
