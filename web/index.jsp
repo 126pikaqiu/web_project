@@ -21,7 +21,7 @@
 </head>
   <body>
 
-  <%@include file="header.inc.jsp"%>
+  <%@include file="all.inc.jsp"%>
   <div id="myCarousel" class="carousel slide">
       <!-- 轮播（Carousel）指标 -->
       <ol class="carousel-indicators">

@@ -1,17 +1,3 @@
-function axios(option) {
-    var dtd = $.Deferred();
-    $.ajax({
-        ...option,
-        success: function () {
-            dtd.resolve();
-        },
-        error: function () {
-            dtd.reject();
-        }
-    });
-    return dtd
-}
-
 function logout(current_url) {
     return axios({
         url: api.logout,

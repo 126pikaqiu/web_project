@@ -46,8 +46,7 @@
 
 </head>
 <body>
-<%@include file="header.inc.jsp"%>
-<%@include file="message.inc.jsp"%>
+<%@include file="all.inc.jsp"%>
     <div class="container">
         <div class="row w-100">
             <div class="col-md-5">

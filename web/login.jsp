@@ -18,7 +18,7 @@
     <link href="templates/css/login.css" type="text/css" rel="stylesheet"/>
 </head>
 <body>
-    <%@include file="header.inc.jsp"%>
+    <%@include file="all.inc.jsp"%>
     <div class="container-fluid login-body">
         <div class="row">
             <div class="col-md-7"></div>

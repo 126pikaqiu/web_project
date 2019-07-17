@@ -1,17 +1,17 @@
 function showMessage(message, type = 2) {
-    var that;
+    let ele = $("#myModal.modal-body p");
+    $(ele).html(message);
+    let color;
     if(type===2) {
-        $("#messageinfo.alert-body").html(message);
-        that = $("#messageinfo.alert-body");
+        color = "#31708f";
     } else if(type === 1 ) {
-        $("#messagesuccess.alert-body").html(message);
-        that = $("#messagesuccess.alert-body");
+        color = "#3c763d"
     } else {
-        $("#messagewarning.alert-body").html(message);
-        that = $("#messagewarning.alert-body");
+        color = "#8a6d3b"
     }
-    $(that).alert();
+    $(ele).css("color",color);
+    $("#myModal").modal('show');
     setTimeout(function () {
-        $(that).alert('close');
+        $("#myModal").modal('hide');
     },1000)
 }

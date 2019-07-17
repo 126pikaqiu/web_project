@@ -32,7 +32,7 @@
                     </ul>
                 </li>
             <%}%>
-            <% if("admin".equalsIgnoreCase(session.getAttribute("authorization").toString()) ) {%>
+            <% if(session.getAttribute("permission") != null && (Integer)(session.getAttribute("permission")) == 2) {%>
                 <li><a href="dashboard.jsp"><span class="glyphicon glyphicon-dashboard"></span>控制台</a></li>
             <%}%>
         </ul>

@@ -26,7 +26,7 @@
     <link href="templates/css/collection.css" type="text/css" rel="stylesheet"/>
 </head>
 <body>
-<%@include file="header.inc.jsp"%>
+<%@include file="all.inc.jsp"%>
 <div class="container">
     <% if (items.size() == 0) {%>
         <div class="row">
