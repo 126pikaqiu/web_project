@@ -19,6 +19,7 @@
 <html>
 <head>
     <title>收藏夹</title>
+    <link href="templates/css/collection.css" type="text/css" rel="stylesheet"/>
 </head>
 <body>
 <%@include file="header.inc.jsp"%>

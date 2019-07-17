@@ -38,9 +38,12 @@ public class AccountService {
         accountDao.init();
     }
     public boolean login(String name, String pwd){
-        String passwordFromUser = Cryption.convertMD5(pwd);
-        String passwordFromDatabase = Cryption.decrypt(accountDao.getUser(name).getPwd());
-        return passwordFromDatabase.equals(passwordFromUser);
+//        String passwordFromUser = Cryption.convertMD5(pwd);
+//        String passwordFromDatabase = Cryption.decrypt(accountDao.getUser(name).getPwd());
+//        return passwordFromDatabase.equals(passwordFromUser);
+        System.out.println(pwd);
+        System.out.println(accountDao.getUser(name).getPwd());
+        return accountDao.getUser(name).getPwd().equals(pwd);
     }
     public User getUser(String name) {
         return accountDao.getUser(name);

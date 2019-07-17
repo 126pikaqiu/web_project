@@ -5,6 +5,8 @@ package service;
  * @Date: 2019/7/16 15:30
  */
 public class Item {
+    private String IMG_BASE_SRC="templates/img/art_img/";
+    private String VIDEO_BASE_SRC="templates/videos/";
     public int getId() {
         return id;
     }
@@ -64,9 +66,9 @@ public class Item {
     public Item(int id, String name, String img, String description, String video, int hot, String time, String location) {
         this.id = id;
         this.name = name;
-        this.img = img;
+        this.img = IMG_BASE_SRC + img;
         this.description = description;
-        this.video = video;
+        this.video = VIDEO_BASE_SRC + video;
         this.hot = hot;
         this.time = time;
         this.location = location;

@@ -12,7 +12,7 @@ public class AccountDao {
     private Connection connection;
 
     public void init(){
-        connection = DAOHelper.getConnection();
+        connection = JDBCUtil.getConnection();
     }
 
     public void destroy() {

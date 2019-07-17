@@ -1,0 +1,18 @@
+.login-body{
+    background-image: url("/templates/img/web_img/login_background.jpg");
+    background-repeat: no-repeat;
+}
+.login-form-group{
+    margin: 10px auto!important;
+}
+.login-tip{
+    margin: 0 auto!important;
+}
+.login-form{
+    border: solid 3px #e3e4e5 ;
+    padding: 30px 15px;
+    margin: 40px auto;
+}
+.login-button{
+    margin: 28px auto!important;
+}

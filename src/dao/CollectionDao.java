@@ -12,7 +12,7 @@ import java.util.ArrayList;
 public class CollectionDao {
     private Connection connection;
     public void init(){
-        connection = DAOHelper.getConnection();
+        connection = JDBCUtil.getConnection();
     }
 
     public void destroy() {
@@ -28,7 +28,7 @@ public class CollectionDao {
     public ArrayList<Item> getItems(int userID) {
         ArrayList<Item> items = new ArrayList<>();
         ArrayList<Integer> itemIDs = new ArrayList<>();
-        String sql = "select * from useritem where userID=" + userID;
+        String sql = "select * from collections where userID=" + userID;
         ResultSet rs=null;
         try {
             Statement statement = connection.createStatement();
@@ -50,7 +50,7 @@ public class CollectionDao {
     }
 
     public Item getItem(int itemID) {
-        String sql = "select * from items where id=";
+        String sql = "select * from artworks where id=";
         Item item = new Item();
         try {
             Statement statement = connection.createStatement();
@@ -61,7 +61,7 @@ public class CollectionDao {
                 String img = rs.getString("img");
                 String description = rs.getString("description");
                 String video = rs.getString("video");
-                int hot = rs.getInt("id");
+                int hot = rs.getInt("like");
                 String time = rs.getString("time");
                 String location = rs.getString("location");
                 item = new Item(id,name,img,description,video,hot,time,location);
