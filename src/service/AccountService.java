@@ -41,8 +41,6 @@ public class AccountService {
 //        String passwordFromUser = Cryption.convertMD5(pwd);
 //        String passwordFromDatabase = Cryption.decrypt(accountDao.getUser(name).getPwd());
 //        return passwordFromDatabase.equals(passwordFromUser);
-        System.out.println(pwd);
-        System.out.println(accountDao.getUser(name).getPwd());
         return accountDao.getUser(name).getPwd().equals(pwd);
     }
     public User getUser(String name) {

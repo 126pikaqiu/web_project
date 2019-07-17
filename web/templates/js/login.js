@@ -6,20 +6,17 @@ $(document).ready(function () {
 function bindEvents() {
     $("#login-btn").click(function () {
         if (checkData()) {
-            var username = $("inputUsername").val();
-            var pwd = $("inputPassword").val();
-                $.ajax({
-                url:'users/login',
-                method:'post',
-                data: {'username':username,'pwd':pwd},
-                success: function () {
+            var username = $("#inputUsername").val();
+            var pwd = $("#inputPassword").val();
+            let data = {'username': username, 'pwd': pwd};
+            $.when(login(data))
+                .success(function () {
+                    showMessage("登录成功，即将跳转。",1);
                     setTimeout(function () {
                         window.location.href = "index.jsp";
                     },1000);
-                },
-                error: function () {
-                    showError();
-                }
+                }).error(function () {
+                showMessage("登录失败，请检查用户名或密码是否正确。",2);
             })
         }
     });
@@ -28,6 +25,9 @@ function checkData() {
     return true;
 }
 function showError() {
+
+}
+function showSuccess() {
 
 }
 function initResource() {

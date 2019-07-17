@@ -11,8 +11,8 @@ import java.sql.SQLException;
 public class JDBCUtil {
     public static Connection getConnection(){
         String jdbcUrl = "jdbc:mysql://111.231.218.101:3306/webproject";
-        String user = "web";
-        String pwd = "iXgnAHYUKbElM2XT";
+        String user = "root";
+        String pwd = "126LiuJia$";
         String diverClass = "com.mysql.jdbc.Driver";
         Connection connection = null;
         try {

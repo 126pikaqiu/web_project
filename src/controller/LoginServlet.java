@@ -34,8 +34,6 @@ public class LoginServlet extends HttpServlet {
         String name = req.getParameter("username");
         String pwd = req.getParameter("pwd");
         HttpSession session = req.getSession();
-        System.out.println(name);
-        System.out.println(pwd);
         if(name != null && pwd != null && accoutService.login(name,pwd)) {
             resp.setStatus(200);
             User user = accoutService.getUser(name);

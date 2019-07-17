@@ -33,7 +33,7 @@ public class CollectionDao {
         try {
             Statement statement = connection.createStatement();
             rs = statement.executeQuery(sql);
-            if(rs.next()){
+            while (rs.next()){
                 int itemID = rs.getInt("itemID");
                 itemIDs.add(itemID);
             }
@@ -62,7 +62,7 @@ public class CollectionDao {
                 String description = rs.getString("description");
                 String video = rs.getString("video");
                 int hot = rs.getInt("like");
-                String time = rs.getString("time");
+                String time = rs.getString("yearOfWork");
                 String location = rs.getString("location");
                 item = new Item(id,name,img,description,video,hot,time,location);
             }

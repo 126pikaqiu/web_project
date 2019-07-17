@@ -7,6 +7,9 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%
+    session.setAttribute("url","item.jsp");
+%>
+<%
 //    Item item = new Item(Integer.parseInt(request.getParameter("id")),"一件文物",345,"2019-07-11");
 //    item.setImg("templates/img/art_img/2.jpg");
 //    item.setDescription("簋是一种古代食器，用来盛装煮熟的稻、粱等食物，犹如现在的饭盆，饮宴时使用。它又是一种重要的礼器，" +
@@ -17,7 +20,19 @@
 //    item.setLocation("故宫博物馆");
     CollectionService collectionService = new CollectionService();
     collectionService.init();
-    Item item = collectionService.getItem(6);
+    boolean next = true;
+    String headerID = request.getParameter("id");
+    if (headerID == null) {
+        next = false;
+    } else {
+        for(char c : headerID.toCharArray()){
+            if(c < '0' || c > '9') {
+                next = false;
+                break;
+            }
+        }
+    }
+    Item item = collectionService.getItem(!next?6:Integer.parseInt(request.getParameter("id")));
 %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
@@ -27,9 +42,12 @@
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="templates/js/item.js"></script>
+
 </head>
 <body>
 <%@include file="header.inc.jsp"%>
+<%@include file="message.inc.jsp"%>
     <div class="container">
         <div class="row w-100">
             <div class="col-md-5">
@@ -40,10 +58,14 @@
                 <p><%=item.getDescription()%></p>
                 <div class="btn-group" data-toggle="buttons">
                     <label class="btn btn-primary item-button">
-                        <input type="radio" name="options" id="option1"> 喜欢
+                        <input type="button" name="options" id="option1"> 喜欢
                     </label>
                     <label class="btn btn-primary item-button">
-                        <input type="radio" name="options" id="option2"> 收藏
+                        <% if (headerPermission == null || (Integer)headerPermission < 1) {%>
+                            <input type="button" name="options" onclick="showMessage('请先登录')"> 收藏
+                        <% } else {%>
+                        <input type="button" name="options" onclick="collection()"> 收藏
+                        <% } %>
                     </label>
                 </div>
             </div>

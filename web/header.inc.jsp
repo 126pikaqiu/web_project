@@ -1,4 +1,4 @@
-<%--
+<%@ page import="service.User" %><%--
   Created by IntelliJ IDEA.
   User: asus
   Date: 2019/7/15
@@ -7,7 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <link href="templates/css/header.inc.css" type="text/css" rel="stylesheet"/>
-<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-default" role="navigation" id="url_info" class="<%= session.getAttribute("url")%>">
     <div class="container-fluid">
         <div class="navbar-header">
             <a class="navbar-brand" href="templates/img/web_img/logo.png"><img src="templates/img/web_img/logo.png" class="logo-png" alt="在线博物馆"></a>
@@ -15,10 +15,22 @@
         <ul class="nav navbar-nav navbar-right">
             <li><a href="index.jsp"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
             <li><a href="search.jsp"><span class="glyphicon glyphicon-search"></span> 搜索</a></li>
-            <% if("unauthorized".equalsIgnoreCase(session.getAttribute("authorization").toString())) {%>
+            <%     Object headerPermission = session.getAttribute("permission");
+                if(headerPermission == null || (Integer)headerPermission < 1) {%>
                 <li><a href="login.jsp"><span class="glyphicon glyphicon-log-in"></span> 未登录</a></li>
-            <%} else {%>
-                <li><a href="login.jsp"><span class="glyphicon glyphicon-user"></span><%= session.getAttribute("username")%></a></li>
+            <%} else { User headerUser = (User)session.getAttribute("user");%>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="glyphicon glyphicon-user"></span><%= headerUser.getName()%>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="collection.jsp">查看收藏夹</a></li>
+                        <li><a href="#">个人中心</a></li>
+                        <li><a href="#">信箱</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#" onclick='logout("<%= session.getAttribute("url")%>")'>退出登录</a></li>
+                    </ul>
+                </li>
             <%}%>
             <% if("admin".equalsIgnoreCase(session.getAttribute("authorization").toString()) ) {%>
                 <li><a href="dashboard.jsp"><span class="glyphicon glyphicon-dashboard"></span>控制台</a></li>
@@ -26,4 +38,7 @@
         </ul>
     </div>
 </nav>
+<script src="templates/js/header.inc.js"></script>
+<script src="templates/js/api/index.js"></script>
+<script src="templates/js/api/users.js"></script>
 

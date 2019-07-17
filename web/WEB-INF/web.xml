@@ -11,4 +11,8 @@
         <servlet-name>loginServlet</servlet-name>
         <url-pattern>/users/login</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>loginServlet</servlet-name>
+        <url-pattern>/users/logout</url-pattern>
+    </servlet-mapping>
 </web-app>

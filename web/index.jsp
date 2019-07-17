@@ -7,8 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
-    if(session.getAttribute("authorization") == null)
-        session.setAttribute("authorization","unauthorized");
+    session.setAttribute("url","index.jsp");
 %>
 <!DOCTYPE html>
 <html>
@@ -33,11 +32,11 @@
       <!-- 轮播（Carousel）项目 -->
       <div class="carousel-inner">
           <div class="item active">
-              <img src="templates/img/art_img/2.jpg" id=234 class="carousel-img click-img" alt="First slide">
+              <img src="templates/img/art_img/2.jpg" id=6 class="carousel-img click-img" alt="First slide">
               <div class="carousel-caption">标题 1</div>
           </div>
           <div class="item">
-              <img src="templates/img/art_img/3.jpg" id=123 class="carousel-img click-img" alt="Second slide">
+              <img src="templates/img/art_img/3.jpg" id=9 class="carousel-img click-img" alt="Second slide">
               <div class="carousel-caption">标题 2</div>
           </div>
           <div class="item">
