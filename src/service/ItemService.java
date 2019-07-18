@@ -1,6 +1,7 @@
 package service;
 
-import dao.itemDao;
+import bean.Item;
+import dao.ItemDao;
 
 import java.util.ArrayList;
 
@@ -9,9 +10,9 @@ import java.util.ArrayList;
  * @Date: 2019/7/16 23:42
  */
 public class ItemService {
-    private itemDao itemDao;
+    private ItemDao itemDao;
     public void init() {
-        itemDao = new itemDao();
+        itemDao = new ItemDao();
         itemDao.init();
     }
     public ArrayList<Item>  getItems(int userID) {

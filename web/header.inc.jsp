@@ -1,4 +1,4 @@
-<%@ page import="service.User" %><%--
+<%@ page import="bean.User" %><%--
   Created by IntelliJ IDEA.
   User: asus
   Date: 2019/7/15

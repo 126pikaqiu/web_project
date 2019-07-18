@@ -1,7 +1,7 @@
 <%@ page import="java.util.ArrayList" %>
-<%@ page import="service.Item" %>
+<%@ page import="bean.Item" %>
 <%@ page import="service.ItemService" %>
-<%@ page import="service.User" %>
+<%@ page import="bean.User" %>
 <%--
   Created by IntelliJ IDEA.
   User: asus

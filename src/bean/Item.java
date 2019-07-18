@@ -1,4 +1,4 @@
-package service;
+package bean;
 
 /**
  * @author: jiaxing liu

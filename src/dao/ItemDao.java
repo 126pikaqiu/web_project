@@ -1,6 +1,6 @@
 package dao;
 
-import service.Item;
+import bean.Item;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -9,17 +9,7 @@ import java.util.ArrayList;
  * @author: jiaxing liu
  * @Date: 2019/7/16 23:42
  */
-public class itemDao {
-    private Connection connection;
-    public void init(){
-        connection = JDBCUtil.getConnection();
-    }
-
-    public void destroy() {
-        if (connection!= null) {
-            connection= null;
-        }
-    }
+public class ItemDao extends Dao{
 
     public boolean save(Item item){
         return true;

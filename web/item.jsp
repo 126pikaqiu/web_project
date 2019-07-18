@@ -1,4 +1,4 @@
-<%@ page import="service.Item" %>
+<%@ page import="bean.Item" %>
 <%@ page import="service.ItemService" %>
 <%--
   Created by IntelliJ IDEA.

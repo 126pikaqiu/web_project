@@ -1,5 +1,6 @@
 package service;
 
+import bean.Collection;
 import dao.CollectionDao;
 
 /**

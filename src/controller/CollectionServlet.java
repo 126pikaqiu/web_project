@@ -1,6 +1,6 @@
 package controller;
 import service.CollectionService;
-import service.User;
+import bean.User;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;

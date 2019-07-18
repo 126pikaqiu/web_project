@@ -1,6 +1,6 @@
 package dao;
 
-import service.User;
+import bean.User;
 
 import java.sql.*;
 
@@ -8,19 +8,7 @@ import java.sql.*;
  * @author: jiaxing liu
  * @Date: 2019/7/15 16:06
  */
-public class AccountDao {
-    private Connection connection;
-
-    public void init(){
-        connection = JDBCUtil.getConnection();
-    }
-
-    public void destroy() {
-        if (connection != null) {
-            connection = null;
-        }
-    }
-
+public class AccountDao extends Dao {
     public boolean save(String name, String pwd){
         return true;
     }

@@ -1,8 +1,7 @@
 package service;
 
+import bean.User;
 import dao.AccountDao;
-
-import java.util.HashMap;
 
 /**
  * @author: jiaxing liu

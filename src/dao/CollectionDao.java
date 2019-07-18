@@ -1,6 +1,6 @@
 package dao;
 
-import service.Collection;
+import bean.Collection;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -12,17 +12,7 @@ import java.util.ArrayList;
  * @author: jiaxing liu
  * @Date: 2019/7/17 23:50
  */
-public class CollectionDao {
-    private Connection connection;
-    public void init(){
-        connection = JDBCUtil.getConnection();
-    }
-
-    void destroy() {
-        if (connection!= null) {
-            connection= null;
-        }
-    }
+public class CollectionDao extends Dao{
 
     public boolean save(Collection collection){
         boolean result = true;
