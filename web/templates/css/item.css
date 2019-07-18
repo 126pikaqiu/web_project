@@ -1,0 +1,10 @@
+.item-button{
+    margin: auto 10px;
+}
+.item-img{
+    width: 90%;
+    margin: auto;
+}
+.item-right-border{
+    border-left: solid 2px #e3e4e5;
+}
