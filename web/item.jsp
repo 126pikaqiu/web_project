@@ -1,5 +1,6 @@
 <%@ page import="service.Item" %>
-<%@ page import="service.CollectionService" %><%--
+<%@ page import="service.ItemService" %>
+<%--
   Created by IntelliJ IDEA.
   User: asus
   Date: 2019/7/16
@@ -18,8 +19,8 @@
 //            "周代礼制中对鼎用簋的使用有严格规定：天子九鼎八簋，诸侯七鼎六簋，大夫五鼎四簋………“九鼎八簋”是最高礼仪，只有周天子才能享用，");
 //    item.setVideo("templates/videos/2.mp4");
 //    item.setLocation("故宫博物馆");
-    CollectionService collectionService = new CollectionService();
-    collectionService.init();
+    ItemService itemService = new ItemService();
+    itemService.init();
     boolean next = true;
     String headerID = request.getParameter("id");
     if (headerID == null) {
@@ -32,7 +33,7 @@
             }
         }
     }
-    Item item = collectionService.getItem(!next?6:Integer.parseInt(request.getParameter("id")));
+    Item item = itemService.getItem(!next?6:Integer.parseInt(request.getParameter("id")));
 %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
@@ -56,16 +57,13 @@
                 <h2><%=item.getName()%></h2>
                 <p><%=item.getDescription()%></p>
                 <div class="btn-group" data-toggle="buttons">
-                    <label class="btn btn-primary item-button">
-                        <input type="button" name="options" id="option1"> 喜欢
-                    </label>
-                    <label class="btn btn-primary item-button">
-                        <% if (headerPermission == null || (Integer)headerPermission < 1) {%>
-                            <input type="button" name="options" onclick="showMessage('请先登录')"> 收藏
-                        <% } else {%>
-                        <input type="button" name="options" onclick="collection()"> 收藏
-                        <% } %>
-                    </label>
+                    <button type="button" name="options" id="option1" class="btn btn-primary item-button"> 喜欢
+                    <% if (headerPermission == null || (Integer)headerPermission < 1) {%>
+                        <button type="button"  name="options" class="btn btn-primary item-button" onclick="showMessage('请先登录')"> 收藏
+                    <% } else {%>
+                    <button type="button" name="options" class="btn btn-primary item-button"
+                            onclick='collection("<%=item.getId()%>")'> 收藏
+                    <% } %>
                 </div>
             </div>
             <div class="col-md-2 item-right-border">

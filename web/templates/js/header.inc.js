@@ -1,4 +1,5 @@
-$("#logout").click(function () {
-    var url = $("#url_info").attr("class");
-    $
-});
+function Logout() {
+    $.when(logout()).done(function () {
+        history.go(0);
+    })
+}

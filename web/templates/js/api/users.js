@@ -1,8 +1,7 @@
-function logout(current_url) {
+function logout() {
     return axios({
         url: api.logout,
         type: 'post',
-        data: {'current_url': current_url}
     })
 }
 

@@ -16,9 +16,10 @@
             <li><a href="index.jsp"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
             <li><a href="search.jsp"><span class="glyphicon glyphicon-search"></span> 搜索</a></li>
             <%     Object headerPermission = session.getAttribute("permission");
+                User headerUser = (User)session.getAttribute("user");
                 if(headerPermission == null || (Integer)headerPermission < 1) {%>
                 <li><a href="login.jsp"><span class="glyphicon glyphicon-log-in"></span> 未登录</a></li>
-            <%} else { User headerUser = (User)session.getAttribute("user");%>
+            <%} else {%>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <span class="glyphicon glyphicon-user"></span><%= headerUser.getName()%>
@@ -28,7 +29,7 @@
                         <li><a href="#">个人中心</a></li>
                         <li><a href="#">信箱</a></li>
                         <li class="divider"></li>
-                        <li><a href="#" onclick='logout("<%= session.getAttribute("url")%>")'>退出登录</a></li>
+                        <li><a href="#" onclick='Logout("<%= session.getAttribute("url")%>")'>退出登录</a></li>
                     </ul>
                 </li>
             <%}%>
@@ -41,4 +42,5 @@
 <script src="templates/js/header.inc.js"></script>
 <script src="templates/js/api/index.js"></script>
 <script src="templates/js/api/users.js"></script>
+<script src="templates/js/api/collections.js"></script>
 

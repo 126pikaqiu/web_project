@@ -1,9 +1,11 @@
 var api = {
     'logout':'users/logout',
-    'login': 'users/login'
+    'login': 'users/login',
+    'add_collection':'collections/add',
+    'delete_collection':'collections/delete',
 };
 
-function axios(option) {
+function axios(option){
     var dtd = $.Deferred();
     $.ajax({
         ...option,

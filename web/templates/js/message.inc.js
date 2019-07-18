@@ -1,5 +1,5 @@
 function showMessage(message, type = 2) {
-    let ele = $("#myModal.modal-body p");
+    let ele = $("#myModal .modal-body p");
     $(ele).html(message);
     let color;
     if(type===2) {

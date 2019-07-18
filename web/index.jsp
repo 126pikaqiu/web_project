@@ -40,7 +40,7 @@
               <div class="carousel-caption">标题 2</div>
           </div>
           <div class="item">
-              <img src="templates/img/art_img/4.jpg" id=446 class="carousel-img click-img" alt="Third slide">
+              <img src="templates/img/art_img/4.jpg" id=7 class="carousel-img click-img" alt="Third slide">
               <div class="carousel-caption">标题 3</div>
           </div>
       </div>

@@ -6,7 +6,7 @@ $(document).ready(function () {
 
 function bindEvents() {
     $("img.click-img").click(function () {
-        window.open("item.jsp?id=" + $(".click-img").attr("id"))
+        window.open("item.jsp?id=" + $(this).attr("id"))
     });
 }
 

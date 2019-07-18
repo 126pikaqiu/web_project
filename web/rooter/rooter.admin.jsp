@@ -12,11 +12,13 @@
     if ((Integer)permission == 2) {
         AccountService accountService = new AccountService();
         accountService.init();
+        String name = ((User) user).getName();
+        String pwd = ((User) user).getPwd();
         if(accountService.login(name,pwd)) {
             accountService.destroy();
-            User user = accountService.getUser(name);
-            session.setAttribute("user",user);
-            session.setAttribute("permission",user.getPermission());
+            User adminUser = accountService.getUser(name);
+            session.setAttribute("user",adminUser);
+            session.setAttribute("permission",adminUser.getPermission());
         } else {
             accountService.destroy();
             session.setAttribute("user",null);

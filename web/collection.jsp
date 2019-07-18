@@ -1,7 +1,8 @@
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="service.Item" %>
-<%@ page import="service.CollectionService" %>
-<%@ page import="service.User" %><%--
+<%@ page import="service.ItemService" %>
+<%@ page import="service.User" %>
+<%--
   Created by IntelliJ IDEA.
   User: asus
   Date: 2019/7/16
@@ -12,10 +13,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@include file="rooter/rooter.default.jsp"%>
 <%
-    CollectionService collectionService = new CollectionService();
-    collectionService.init();
+    ItemService itemService = new ItemService();
+    itemService.init();
     User collectionUser = (User)session.getAttribute("user");
-    ArrayList<Item> items = collectionService.getItems(collectionUser.getUserID());
+    ArrayList<Item> items = itemService.getItems(collectionUser.getUserID());
 %>
 <html>
 <head>
@@ -24,6 +25,7 @@
     <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="templates/css/collection.css" type="text/css" rel="stylesheet"/>
+    <script src="templates/js/collection.js"></script>
 </head>
 <body>
 <%@include file="all.inc.jsp"%>
@@ -71,18 +73,14 @@
         </div>
         <div class="col-md-2">
             <div class="collection-item-body">
-                <label class="btn btn-primary btn-sm">
-                    <input type="button" name="options" class="item" id="<%=item.getId()%>" > 详情
-                </label>
-                <label class="btn btn-primary btn-sm">
-                    <input type="button" name="options" class="delete"> 删除
-                </label>
+                <button class="btn btn-primary btn-sm item" type="button" id="<%=item.getId()%>" > 详情</button>
+                <button class="btn btn-primary btn-sm delete" type="button"
+                        onclick='DeleteCollection("<%=item.getId()%>")'> 删除 </button>
             </div>
         </div>
     </div>
     <% }%>
     <% }%>
 </div>
-<script src="templates/js/collection.js"></script>
 </body>
 </html>

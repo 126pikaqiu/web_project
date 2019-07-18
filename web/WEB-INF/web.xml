@@ -7,12 +7,28 @@
         <servlet-name>loginServlet</servlet-name>
         <servlet-class>controller.LoginServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>collectionServlet</servlet-name>
+        <servlet-class>controller.CollectionServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>logoutServlet</servlet-name>
+        <servlet-class>controller.LogoutServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>loginServlet</servlet-name>
         <url-pattern>/users/login</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>loginServlet</servlet-name>
+        <servlet-name>logoutServlet</servlet-name>
         <url-pattern>/users/logout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>collectionServlet</servlet-name>
+        <url-pattern>/collections/add</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>collectionServlet</servlet-name>
+        <url-pattern>/collections/delete</url-pattern>
     </servlet-mapping>
 </web-app>
