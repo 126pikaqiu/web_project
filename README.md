@@ -44,6 +44,8 @@
     - [1.2.3. search.jsp](#)
     - [1.2.3. test.html](#)
 <!-- /TOC -->
+### bean包
+数据载体的bean，目前有Collection(一个收藏记录），Item(一个展品），User(一个用户）。
 ### dao包
 #### JDBCUtil类
   建立jdbc连接的类。jdbcUrl为jdbc:mysql://111.231.218.101:3306/webproject，用户名为root，密码为126LiuJia$，驱动程序为com.mysql.jdbc.Driver。
@@ -56,6 +58,30 @@
   继承自Dao，负责和collectiosn数据库表交互的类。可以通过用户的id获得他所收藏的所有展品的展品id。提供了一个将收藏存入到数据库表的功能save，提供了一个删除数据库表中一个收藏记录的功能delete。
 #### Account类
    继承自Dao，负责和users数据库表交互的类。可以通过用户的id获得他的详细信息。提供存储一个用户信息到数据库表的功能，目前待完成。
+### controller包
+  控制处理请求的servlet类集合。
+### service包
+  向下控制和ben包以及dao包交互，向上被servlet调用。
+### web/rooter目录
+  负责控制路由
+#### rooter.admin.jsp
+  判断用户权限是否为管理员，内部已经调用rooter.default.jsp
+#### rooter.default.jsp
+  判断用户是否登录。
+### web/templates/js
+#### /api
+  集合了后台的数据交互接口和ajax异步请求封装函数，建议所有的ajax异步请求全部写在这里面。index.js里面放置了后台接口的Url, 还放置了封装了ajax请求和函数axios(里面使用了jquery的延迟对象)。
+#### message.inc.js
+  通用组件提示框的控制脚本，已被加载到message.inc.jsp里面了。
+#### header.inc.js
+  通用导航栏的控制脚本，已被加载到header.inc.jsp中。
+#### 其他
+  其他的脚本为各个页面的控制脚本。
+### web/xxx.jsp
+#### all.inc.jsp
+  这是每个页面都需要加载的jsp，目前里面包含header.inc.jsp和message.inc.jsp。
+#### test.html
+  这个是用来调试的html,主要是用来调整UI美观的。因为tomcat服务器启动耗时较长，不建议每次重启来调整UI。建议方法，在out目录下的test.html里面调试UI,可以直接在本地浏览器中查看效果。缺点是不能编译java代码。
 ## 通用组件
 ### 关于提示框
 #### jsp
