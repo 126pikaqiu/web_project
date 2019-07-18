@@ -1,6 +1,18 @@
 #开发文档
 ## 目录说明
+<!-- TOC -->
 
+- [1. maimai_rb_django](#1-maimairbdjango)
+  - [1.1. maimai_rb_django](#11-maimairbdjango)
+    - [1.1.1. routing.py](#111-routingpy)   
+    - [1.1.2. settings.py](#112-settingspy)
+    - [1.1.3. urls.py](#113-urlspy)
+  - [1.2. app_geo](#12-appgeo)
+  - [1.3. app_home](#13-apphome)
+  - [1.4. back_files](#14-backfiles)
+  - [1.5. chat](#15-chat)
+
+<!-- /TOC -->
 ## 通用组件
 ### 关于提示框
 #### jsp
