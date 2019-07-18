@@ -13,8 +13,9 @@
     - [1.1.2. dao ](#)
       - [1.1.2.1 AccountDao](#)
       - [1.1.2.2 CollectionDao](#)
-      - [1.1.2.3 itemDao](#)
+      - [1.1.2.3 ItemDao](#)
       - [1.1.2.4 JDBCUtil](#)
+      - [1.1.2.5 Dao](#)
     - [1.1.3. service](#)
       - [1.1.3.1 AccountService](#)
       - [1.1.3.2 CollectionService](#)
@@ -43,6 +44,18 @@
     - [1.2.3. search.jsp](#)
     - [1.2.3. test.html](#)
 <!-- /TOC -->
+### dao包
+#### JDBCUtil类
+  建立jdbc连接的类。jdbcUrl为jdbc:mysql://111.231.218.101:3306/webproject，用户名为root，密码为126LiuJia$，驱动程序为com.mysql.jdbc.Driver。
+存在方法返回连接。
+#### Dao类
+  通用Dao，抽象类。负责获得连接以及实现伪生命周期方法init和destroy。
+#### ItemDao类
+  继承自Dao，负责和artworks数据库表交互的类。可以通过展品id获得详细的展品信息，也可以通过用户的id获得他所收藏的所有展品。提供存储一个展品到数据库的功能，目前待完成。
+#### Collection类
+  继承自Dao，负责和collectiosn数据库表交互的类。可以通过用户的id获得他所收藏的所有展品的展品id。提供了一个将收藏存入到数据库表的功能save，提供了一个删除数据库表中一个收藏记录的功能delete。
+#### Account类
+   继承自Dao，负责和users数据库表交互的类。可以通过用户的id获得他的详细信息。提供存储一个用户信息到数据库表的功能，目前待完成。
 ## 通用组件
 ### 关于提示框
 #### jsp
