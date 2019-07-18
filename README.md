@@ -25,6 +25,8 @@
       - [1.1.3.3 User](#)
   - [1.2. web](#12-appgeo)
     - [1.2.1. rooter](#)
+      - [1.2.1.1 rooter.admin.jsp](#)
+      - [1.1.1.2 rooter.default.jsp](#)      
     - [1.2.2. templates](#)
     - [1.2.3. WEB-INF](#)
     - [1.2.3. all.inc.jsp](#)
