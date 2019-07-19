@@ -22,4 +22,12 @@ public class ItemService {
     public Item getItem(int itemID) {
         return itemDao.getItem(itemID);
     }
+
+    public ArrayList<Item> getLatest(){
+        return itemDao.getLatest();
+    }
+
+    public ArrayList<Item> getHottest(){
+        return itemDao.getHottest();
+    }
 }

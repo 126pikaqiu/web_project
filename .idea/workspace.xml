@@ -6,67 +6,15 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="277ec87e-742b-4d72-93d5-0f72a7e41b22" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/005060.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/008020.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/010020.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/010060.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/012050.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/017030.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/017060.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/017090.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/024070.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/063020.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/063030.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/0653.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/105080.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/118030.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/123.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/12354.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/1243.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/12451.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/12541.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/128010.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/128030.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/131010.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/131020.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/131030.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/132030.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/137010.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/139020.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/140030.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/14325.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/151.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/2151.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/232.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/2341.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/2342.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/235.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/24.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/2452.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/252.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/254.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/3245.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/344.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/45.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/4563.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/5234.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/536.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/5463.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/624.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/632.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/635.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/723.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/73.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/876.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/img/art_img/95.jpg" afterDir="false" />
+    <list default="true" id="277ec87e-742b-4d72-93d5-0f72a7e41b22" name="Default Changelist" comment="艺术品数据库修改">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bean/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bean/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/ItemDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/ItemDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/ItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/ItemService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/rooter/rooter.default.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/rooter/rooter.default.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/search.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/search.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/img/art_img/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/img/art_img/5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/img/art_img/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/item.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/item.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/js/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -92,28 +40,44 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/templates/js/header.inc.js">
+        <entry file="file://$PROJECT_DIR$/web/templates/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
+            <state relative-caret-position="117">
+              <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/LoginServlet.java">
+        <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="25" />
+            <state relative-caret-position="102">
+              <caret line="15" column="62" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/service/ItemService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="181">
+              <caret line="30" column="27" lean-forward="true" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#510#511#0" expanded="true" />
+                <element signature="e#538#539#0" expanded="true" />
+                <element signature="e#593#594#0" expanded="true" />
+                <element signature="e#621#622#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/dao/ItemDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-33">
+              <caret line="44" column="27" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -122,37 +86,33 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/search.jsp">
+        <entry file="file://$PROJECT_DIR$/web/collection.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+            <state relative-caret-position="459">
+              <caret line="27" column="54" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/rooter/rooter.default.jsp">
+        <entry file="file://$PROJECT_DIR$/web/item.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+            <state relative-caret-position="-336">
+              <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/templates/css/collection.css">
+        <entry file="file://$PROJECT_DIR$/src/bean/Item.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/templates/css/login.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+            <state relative-caret-position="816">
+              <caret line="94" column="30" selection-start-line="94" selection-start-column="30" selection-end-line="94" selection-end-column="30" />
+              <folding>
+                <element signature="e#1974#1975#0" expanded="true" />
+                <element signature="e#2016#2017#0" expanded="true" />
+                <element signature="e#2050#2051#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -160,7 +120,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dao/CollectionDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
+            <state relative-caret-position="-516">
               <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -170,22 +130,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dao/AccountDao.java">
+        <entry file="file://D:/xampp/htdocs/test/workInfor.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/templates/js/api/collections.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+            <state relative-caret-position="238">
+              <caret line="71" column="71" lean-forward="true" selection-start-line="71" selection-start-column="71" selection-end-line="71" selection-end-column="85" />
             </state>
           </provider>
         </entry>
@@ -216,17 +164,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/service/User.java" />
-        <option value="$PROJECT_DIR$/src/dao/DAOHelper.java" />
-        <option value="$PROJECT_DIR$/web/templates/js/collection.jsp" />
-        <option value="$PROJECT_DIR$/src/service/Item.java" />
         <option value="$PROJECT_DIR$/web/templates/test.html" />
         <option value="$PROJECT_DIR$/out/artifacts/web_project_war_exploded/templates/css/login.css" />
         <option value="$PROJECT_DIR$/src/controller/AccountServlet.java" />
         <option value="$PROJECT_DIR$/src/dao/JDBCUtil.java" />
         <option value="D:/xampp/htdocs/test/cart.html" />
         <option value="$PROJECT_DIR$/out/artifacts/web_project_war_exploded/templates/css/collection.css" />
-        <option value="$PROJECT_DIR$/out/artifacts/web_project_war_exploded/test.html" />
         <option value="$PROJECT_DIR$/out/artifacts/web_project_war_exploded/templates/js/collection.js" />
         <option value="$PROJECT_DIR$/web/test.html" />
         <option value="$PROJECT_DIR$/src/service/AccountService.java" />
@@ -243,14 +186,11 @@
         <option value="$PROJECT_DIR$/web/templates/js/header.inc.js" />
         <option value="$PROJECT_DIR$/web/templates/js/message.inc.js" />
         <option value="$PROJECT_DIR$/web/templates/js/api/index.js" />
-        <option value="$PROJECT_DIR$/src/service/ItemService.java" />
         <option value="$PROJECT_DIR$/src/service/collectionService.java" />
         <option value="$PROJECT_DIR$/src/service/Collection.java" />
         <option value="$PROJECT_DIR$/src/dao/itemDao.java" />
         <option value="$PROJECT_DIR$/src/service/CollectionService.java" />
-        <option value="$PROJECT_DIR$/web/templates/js/index.js" />
         <option value="$PROJECT_DIR$/web/header.inc.jsp" />
-        <option value="$PROJECT_DIR$/web/item.jsp" />
         <option value="$PROJECT_DIR$/out/artifacts/web_project_war_exploded/templates/js/item.js" />
         <option value="$PROJECT_DIR$/web/templates/js/item.js" />
         <option value="$PROJECT_DIR$/web/collection.jsp" />
@@ -260,13 +200,21 @@
         <option value="$PROJECT_DIR$/web/templates/js/collection.js" />
         <option value="$PROJECT_DIR$/src/controller/LoginServlet.java" />
         <option value="$PROJECT_DIR$/src/dao/Dao.java" />
-        <option value="$PROJECT_DIR$/src/dao/ItemDao.java" />
         <option value="$PROJECT_DIR$/src/dao/CollectionDao.java" />
         <option value="$PROJECT_DIR$/src/dao/AccountDao.java" />
         <option value="$PROJECT_DIR$/web/templates/css/login.css" />
         <option value="$PROJECT_DIR$/web/rooter/rooter.default.jsp" />
         <option value="$PROJECT_DIR$/web/search.jsp" />
+        <option value="$PROJECT_DIR$/out/artifacts/web_project_war_exploded/test.html" />
+        <option value="$PROJECT_DIR$/out/artifacts/web_project_war_exploded/templates/css/index.css" />
+        <option value="$PROJECT_DIR$/out/artifacts/web_project_war_exploded/templates/js/index.js" />
+        <option value="$PROJECT_DIR$/web/templates/js/index.js" />
+        <option value="$PROJECT_DIR$/web/templates/css/index.css" />
+        <option value="$PROJECT_DIR$/src/bean/Item.java" />
+        <option value="$PROJECT_DIR$/web/item.jsp" />
+        <option value="$PROJECT_DIR$/src/service/ItemService.java" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/src/dao/ItemDao.java" />
       </list>
     </option>
   </component>
@@ -284,10 +232,10 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-68" />
-    <option name="y" value="101" />
-    <option name="width" value="1630" />
-    <option name="height" value="967" />
+    <option name="x" value="32" />
+    <option name="y" value="17" />
+    <option name="width" value="1815" />
+    <option name="height" value="974" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -295,6 +243,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -305,18 +254,13 @@
             <path>
               <item name="web_project" type="b2602c69:ProjectViewProjectNode" />
               <item name="web_project" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web_project" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="web_project" type="b2602c69:ProjectViewProjectNode" />
               <item name="web_project" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="bean" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="web_project" type="b2602c69:ProjectViewProjectNode" />
@@ -327,7 +271,25 @@
             <path>
               <item name="web_project" type="b2602c69:ProjectViewProjectNode" />
               <item name="web_project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web_project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web_project" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web_project" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="rooter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="web_project" type="b2602c69:ProjectViewProjectNode" />
@@ -340,15 +302,7 @@
               <item name="web_project" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web_project" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-              <item name="art_img" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="web_project" type="b2602c69:ProjectViewProjectNode" />
@@ -365,7 +319,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -373,7 +326,7 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563500119164" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563511776652" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/mysql-connector-java-8.0.16.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -383,6 +336,13 @@
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\asus\learn\Excellent software development\web_project\web" />
+      <recent name="C:\Users\asus\learn\Excellent software development\web_project\web\rooter" />
+      <recent name="C:\Users\asus\learn\Excellent software development\web_project\web\templates\img\art_img" />
+      <recent name="C:\Users\asus\learn\Excellent software development\web_project\web\templates\img\web_img" />
+      <recent name="C:\Users\asus\learn\Excellent software development\web_project\web\templates" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
@@ -391,13 +351,6 @@
       <recent name="C:\Users\asus\learn\Excellent software development\web_project\out\artifacts\web_project_war_exploded" />
       <recent name="C:\Users\asus\learn\Excellent software development\web_project\web\templates\img\web_img" />
       <recent name="C:\Users\asus\learn\Excellent software development\web_project\web\templates\img\art_img" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\asus\learn\Excellent software development\web_project\web" />
-      <recent name="C:\Users\asus\learn\Excellent software development\web_project\web\rooter" />
-      <recent name="C:\Users\asus\learn\Excellent software development\web_project\web\templates\img\art_img" />
-      <recent name="C:\Users\asus\learn\Excellent software development\web_project\web\templates\img\web_img" />
-      <recent name="C:\Users\asus\learn\Excellent software development\web_project\web\templates" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -525,7 +478,8 @@
       <workItem from="1563350060311" duration="17645000" />
       <workItem from="1563373216449" duration="9373000" />
       <workItem from="1563416654298" duration="15629000" />
-      <workItem from="1563495107087" duration="903000" />
+      <workItem from="1563495107087" duration="1448000" />
+      <workItem from="1563503235244" duration="6125000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1563177832445</created>
@@ -618,17 +572,24 @@
       <option name="project" value="LOCAL" />
       <updated>1563430956108</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="艺术品数据库修改">
+      <created>1563500174669</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1563500174669</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94037000" />
+    <option name="totallyTimeSpent" value="100707000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-54" y="81" width="1304" height="773" extended-state="0" />
+    <frame x="26" y="14" width="1452" height="779" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31701446" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2647059" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -638,7 +599,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.35456732" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.44976816" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -708,128 +669,16 @@
     <MESSAGE value="继续工作" />
     <MESSAGE value="一些基本的组件" />
     <MESSAGE value="完成两次作业" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成两次作业" />
+    <MESSAGE value="艺术品数据库修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="艺术品数据库修改" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/out/artifacts/web_project_war_exploded/templates/js/collection.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="31" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/web_project_war_exploded/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-          <folding>
-            <element signature="n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/web_project_war_exploded/templates/css/collection.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/templates/img/art_img/2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://D:/xampp/htdocs/test/templates/js/cart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="323" column="19" selection-start-line="323" selection-start-column="19" selection-end-line="323" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/xampp/htdocs/test/templates/js/global.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/message.inc.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="67" column="7" selection-start-line="67" selection-start-column="7" selection-end-line="67" selection-end-column="7" />
-          <folding>
-            <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/templates/js/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="10" column="58" lean-forward="true" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/rooter/rooter.admin.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="19" column="51" lean-forward="true" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/templates/js/message.inc.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/templates/js/api/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/dashboard.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/AccountServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/templates/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/header.inc.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
           <caret line="42" column="29" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/web_project_war_exploded/templates/js/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/out/artifacts/web_project_war_exploded/templates/js/api/users.js">
       <provider selected="true" editor-type-id="text-editor" />
@@ -853,20 +702,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/out/artifacts/web_project_war_exploded/templates/js/api/index.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/item.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="64" column="48" selection-start-line="64" selection-start-column="48" selection-end-line="64" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/collection.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="27" column="54" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -940,27 +775,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/service/ItemService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/bean/Collection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bean/Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -975,18 +793,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/ItemDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-349">
-          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#197#198#0" expanded="true" />
-            <element signature="e#224#225#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1014,17 +820,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/templates/js/header.inc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/templates/img/art_img/0653.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/search.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/rooter/rooter.default.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -1039,16 +848,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/CollectionDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1069,17 +868,165 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/templates/js/header.inc.js">
+    <entry file="file://$PROJECT_DIR$/web/rooter/rooter.default.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        <state relative-caret-position="51">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/dashboard.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/web_project_war_exploded/templates/css/item.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/web_project_war_exploded/templates/css/header.inc.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="67" column="7" selection-start-line="67" selection-start-column="7" selection-end-line="67" selection-end-column="7" />
+          <folding>
+            <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/web_project_war_exploded/templates/css/login.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/web_project_war_exploded/search.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/web_project_war_exploded/templates/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/web_project_war_exploded/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="12" selection-start-line="12" selection-end-line="36" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/web_project_war_exploded/templates/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="18" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/templates/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/templates/css/item.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/xampp/htdocs/test/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/xampp/htdocs/test/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/CollectionDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-516">
+          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/xampp/htdocs/test/workInfor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="71" column="71" lean-forward="true" selection-start-line="71" selection-start-column="71" selection-end-line="71" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bean/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="94" column="30" selection-start-line="94" selection-start-column="30" selection-end-line="94" selection-end-column="30" />
+          <folding>
+            <element signature="e#1974#1975#0" expanded="true" />
+            <element signature="e#2016#2017#0" expanded="true" />
+            <element signature="e#2050#2051#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/collection.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="54" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/templates/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/service/ItemService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="30" column="27" lean-forward="true" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#510#511#0" expanded="true" />
+            <element signature="e#538#539#0" expanded="true" />
+            <element signature="e#593#594#0" expanded="true" />
+            <element signature="e#621#622#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/item.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-336">
+          <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
+        <state relative-caret-position="102">
+          <caret line="15" column="62" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/ItemDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-33">
+          <caret line="44" column="27" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

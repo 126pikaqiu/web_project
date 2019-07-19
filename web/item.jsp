@@ -34,6 +34,9 @@
         }
     }
     Item item = itemService.getItem(!next?6:Integer.parseInt(request.getParameter("id")));
+    if (item == null) {
+        item = itemService.getItem(6);
+    }
 %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
