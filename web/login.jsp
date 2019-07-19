@@ -24,7 +24,7 @@
         <div class="row">
             <div class="col-md-7"></div>
             <div class="col-md-3">
-                <form class="form-horizontal login-form" role="form" action="loginServlet">
+                <form class="form-horizontal login-form" role="form">
                     <div class="form-group login-form-group">
                         <label for="inputUsername" class="col-sm-3 control-label">username</label>
                         <div class="col-sm-9">
@@ -32,7 +32,7 @@
                         </div>
                     </div>
                     <div class="form-group login-tip login-form-group">
-                        <span class="col-sm-6">用户名不能为空</span>
+                        <span class="col-sm-6 info" id="name_info">用户名不能为空</span>
                     </div>
                     <div class="form-group login-form-group">
                         <label for="inputPassword" class="col-sm-3 control-label">password</label>
@@ -41,7 +41,7 @@
                         </div>
                     </div>
                     <div class="form-group login-tip login-form-group">
-                        <span class="col-sm-6">密码不能为空</span>
+                        <span class="col-sm-6 info" id="pwd_info">密码不能为空</span>
                     </div>
                     <div class="form-group login-button login-form-group">
                         <div class="col-sm-12">

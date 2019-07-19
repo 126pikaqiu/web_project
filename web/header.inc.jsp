@@ -18,7 +18,15 @@
             <%     Object headerPermission = session.getAttribute("permission");
                 User headerUser = (User)session.getAttribute("user");
                 if(headerPermission == null || (Integer)headerPermission < 1) {%>
-                <li><a href="login.jsp"><span class="glyphicon glyphicon-log-in"></span> 未登录</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="glyphicon glyphicon-log-in"></span> 未登录
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="login.jsp">登录</a></li>
+                    <li><a href="register.jsp">注册</a></li>
+                </ul>
+            </li>
             <%} else {%>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">

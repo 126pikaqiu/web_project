@@ -8,6 +8,10 @@
         <servlet-class>controller.LoginServlet</servlet-class>
     </servlet>
     <servlet>
+        <servlet-name>registerServlet</servlet-name>
+        <servlet-class>controller.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet>
         <servlet-name>collectionServlet</servlet-name>
         <servlet-class>controller.CollectionServlet</servlet-class>
     </servlet>
@@ -18,6 +22,10 @@
     <servlet-mapping>
         <servlet-name>loginServlet</servlet-name>
         <url-pattern>/users/login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>registerServlet</servlet-name>
+        <url-pattern>/users/register</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>logoutServlet</servlet-name>

@@ -28,11 +28,29 @@ public class ItemDao extends Dao{
 
     public Item getItem(int itemID) {
         String sql = "select * from artworks where id=";
-        Item item = new Item();
+        ArrayList<Item> items = getItems(sql + itemID);
+        if(items.size() > 0)
+            return items.get(0);
+        else
+            return null;
+    }
+
+    public ArrayList<Item> getLatest(){
+        String sql = "SELECT * FROM artworks Order By `timeReleased` desc limit 3";
+        return getItems(sql);
+    }
+
+    public ArrayList<Item> getHottest(){
+        String sql = "SELECT * FROM artworks Order By `like` desc limit 3";
+        return getItems(sql);
+    }
+
+    private ArrayList<Item> getItems(String sql) {
+        ArrayList<Item> items = new ArrayList<>();
         try {
             Statement statement = connection.createStatement();
-            ResultSet rs = statement.executeQuery(sql+ itemID);
-            if(rs.next()){
+            ResultSet rs = statement.executeQuery(sql);
+            while (rs.next()){
                 int id = rs.getInt("id");
                 String name =  rs.getString("name");
                 String img = rs.getString("img");
@@ -41,14 +59,15 @@ public class ItemDao extends Dao{
                 int hot = rs.getInt("like");
                 String time = rs.getString("yearOfWork");
                 String location = rs.getString("location");
-                item = new Item(id,name,img,description,video,hot,time,location);
+                String genre = rs.getString("genre");
+                items.add(new Item(id,name,img,description,video,hot,time,location,genre));
             }
             statement.close();
             rs.close();
         }catch (SQLException e){
             e.printStackTrace();
         }
-        return item;
+        return items;
     }
 
 }
