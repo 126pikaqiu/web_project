@@ -32,15 +32,15 @@
       <!-- 轮播（Carousel）项目 -->
       <div class="carousel-inner">
           <div class="item active">
-              <img src="templates/img/art_img/2.jpg" id=6 class="carousel-img click-img" alt="First slide">
-              <div class="carousel-caption">标题 1</div>
+              <img src="templates/img/art_img/254.jpg" id=242 class="carousel-img click-img" alt="First slide">
+              <div class="carousel-caption">人面铜壶</div>
           </div>
           <div class="item">
-              <img src="templates/img/art_img/3.jpg" id=9 class="carousel-img click-img" alt="Second slide">
-              <div class="carousel-caption">标题 2</div>
+              <img src="templates/img/art_img/2151.jpg" id=252 class="carousel-img click-img" alt="Second slide">
+              <div class="carousel-caption">开元通宝铜钱</div>
           </div>
           <div class="item">
-              <img src="templates/img/art_img/4.jpg" id=7 class="carousel-img click-img" alt="Third slide">
+              <img src="templates/img/art_img/0653.jpeg" id=248 class="carousel-img click-img" alt="Third slide">
               <div class="carousel-caption">标题 3</div>
           </div>
       </div>
