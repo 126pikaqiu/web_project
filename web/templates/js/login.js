@@ -23,11 +23,24 @@ function bindEvents() {
     });
 }
 function checkData() {
-    return true;
+    let legal = true;
+    let name = $("#inputUsername").val();
+    let pwd = $("#inputPassword").val();
+    if(name == '') {
+        $("#name_info").css('visibility','visible');
+        legal = false;
+    }
+    if(pwd == '') {
+        $("#pwd_info").css('visibility','visible');
+        legal = false;
+    }
+    setTimeout(function () {
+        $("#name_info").css('visibility','hidden');
+        $("#pwd_info").css('visibility','hidden');
+    },1500)
+    return legal;
 }
-function showError() {
 
-}
 
 function initResource() {
     
