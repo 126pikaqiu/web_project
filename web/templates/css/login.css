@@ -16,11 +16,7 @@
 .login-button{
     margin: 28px auto!important;
 }
-#name_info{
-    visibility: hidden;
-    color: #8a6d3b;
-}
-#pwd_info{
+.info{
     visibility: hidden;
     color: #8a6d3b;
 }
