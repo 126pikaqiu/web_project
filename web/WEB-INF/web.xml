@@ -19,9 +19,17 @@
         <servlet-name>logoutServlet</servlet-name>
         <servlet-class>controller.LogoutServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>modifyServlet</servlet-name>
+        <servlet-class>controller.ModifyUserServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>loginServlet</servlet-name>
         <url-pattern>/users/login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>modifyServlet</servlet-name>
+        <url-pattern>/users/info</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>registerServlet</servlet-name>
