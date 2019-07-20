@@ -1,6 +1,7 @@
 package dao;
 
 import bean.Item;
+import bean.SearchResult;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -70,7 +71,7 @@ public class ItemDao extends Dao {
         return items;
     }
 
-    public ArrayList<Item> getItemsByOrder(String searchKey, String order, int page) {
+    public SearchResult getItemsByOrder(String searchKey, String order, int page) {
         if (order.equals("hot"))
             order = " Order By `like` desc";
         else if (order.equals("name")) {
@@ -86,7 +87,7 @@ public class ItemDao extends Dao {
                 break;
             returnItems.add(totalItems.get(i));
         }
-        return returnItems;
+        return new SearchResult(returnItems, totalItems.size(), page);
     }
 
 

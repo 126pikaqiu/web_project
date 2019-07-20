@@ -1,6 +1,7 @@
 package controller;
 
 import bean.Item;
+import bean.SearchResult;
 import com.alibaba.fastjson.JSON;
 import service.ItemService;
 
@@ -9,7 +10,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
+import java.io.OutputStream;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 
 public class SearchServlet extends HttpServlet {
@@ -25,13 +27,12 @@ public class SearchServlet extends HttpServlet {
         String order = request.getParameter("order");
         String page = request.getParameter("page");
         int intPage = page == null ? 1 : Integer.parseInt(page);
-        ArrayList<Item> items = itemService.getItemsByOrder(searchKey, order, intPage);
-        if (items != null) {
+        SearchResult searchResult = itemService.getItemsByOrder(searchKey, order, intPage);
+        if (searchResult.getItems() != null) {
             response.setStatus(200);
-            PrintWriter out = response.getWriter();
-            System.out.println(JSON.toJSONString(items));
-            System.out.println("arrive here!");
-            out.write(JSON.toJSONString(items));
+            OutputStream out = response.getOutputStream();
+            System.out.println(JSON.toJSONString(searchResult));
+            out.write(JSON.toJSONString(searchResult).getBytes(StandardCharsets.UTF_8));
         } else {
             response.setStatus(400);
         }

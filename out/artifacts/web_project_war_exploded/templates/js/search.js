@@ -158,8 +158,9 @@ function search(page) {
     $.when(searchByOrder(data))
         .done(function (msg) {
             console.log(msg);
-            msg = JSON.parse(msg);
-            itemNum = msg.length;
+            msg = eval("("+msg+")");
+            itemNum = msg["pageNum"];
+            msg = msg["items"];
             for (let i in msg) {
                 $($(".lay-item")[i]).attr("class", "lay-item");
                 $($(".lay-item a")[i]).attr("href", "item.jsp?id=" + msg[i]["id"]);
@@ -169,7 +170,7 @@ function search(page) {
                     window.location.href = "item.jsp?id=" + msg[i]["id"];
                 });
                 $($(".hot")[i]).html(msg[i]["hot"]);
-                $($(".lay-des")[i]).html(msg[i]["description"].substr(0, 90) + "...");
+                $($(".lay-des")[i]).html(msg[i]["description"].substr(0, 30) + "...");
             }
             $(".paN").removeClass("dis-none");
             let itemsNumber = itemNum;

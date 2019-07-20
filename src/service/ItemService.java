@@ -1,6 +1,7 @@
 package service;
 
 import bean.Item;
+import bean.SearchResult;
 import dao.ItemDao;
 
 import java.util.ArrayList;
@@ -21,7 +22,7 @@ public class ItemService {
         return itemDao.getItems(userID);
     }
 
-    public ArrayList<Item> getItemsByOrder(String searchKey, String order, int page) {
+    public SearchResult getItemsByOrder(String searchKey, String order, int page) {
         return itemDao.getItemsByOrder(searchKey, order, page);
     }
 
