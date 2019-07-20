@@ -42,10 +42,16 @@ public class AccountService {
 //        return passwordFromDatabase.equals(passwordFromUser);
         return accountDao.getUser(name).getPwd().equals(pwd);
     }
+    public boolean register(User user) {
+        return accountDao.saveUser(user);
+    }
     public User getUser(String name) {
         return accountDao.getUser(name);
     }
     public void destroy(){
         accountDao.destroy();
+    }
+    public boolean updateUser(User user){
+        return accountDao.updateUser(user);
     }
 }

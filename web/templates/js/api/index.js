@@ -3,17 +3,19 @@ var api = {
     'login': 'users/login',
     'add_collection':'collections/add',
     'delete_collection':'collections/delete',
+    'register': 'users/register',
+    'userInfo': 'users/info'
 };
 
 function axios(option){
     var dtd = $.Deferred();
     $.ajax({
         ...option,
-        success: function () {
-            dtd.resolve();
+        success: function (res) {
+            dtd.resolve(res);
         },
-        error: function () {
-            dtd.reject();
+        error: function (error) {
+            dtd.reject(error);
         }
     });
     return dtd.promise()

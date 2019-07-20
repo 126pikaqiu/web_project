@@ -54,10 +54,51 @@ public class User {
     }
 
     private int userID;
+
+    public User(String name, String pwd, String email, int permission) {
+        this.name = name;
+        this.pwd = pwd;
+        this.email = email;
+        this.permission = permission;
+    }
+
     private String name;
     private String pwd;
     private String email;
     private int permission;
-    public User(){}
 
+    public String getSignature() {
+        return signature;
+    }
+
+    public void setSignature(String signature) {
+        this.signature = signature;
+    }
+
+    public User(int userID, String name, String pwd, String email, String signature) {
+        this.userID = userID;
+        this.name = name;
+        this.pwd = pwd;
+        this.email = email;
+        this.signature = signature;
+    }
+    public User(int userID, String name, String pwd, String email, String signature,int permission) {
+        this.userID = userID;
+        this.name = name;
+        this.pwd = pwd;
+        this.email = email;
+        this.signature = signature;
+        this.permission = permission;
+    }
+
+    private String signature;
+    public User(){}
+    public User(User user){
+        this.userID = user.userID;
+        this.name = user.name;
+        this.pwd = user.pwd;
+        this.email = user.email;
+        this.signature = user.signature;
+        this.permission = user.permission;
+    }
 }

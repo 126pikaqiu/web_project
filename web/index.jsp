@@ -45,7 +45,7 @@
               </div>
           </div>
           <div class="item">
-              <img src="<%=hottest.get(1).getImg()%>" alt="<%=hottest.get(0).getId()%>" class="carousel-img click-img">
+              <img src="<%=hottest.get(1).getImg()%>" alt="<%=hottest.get(1).getId()%>" class="carousel-img click-img">
               <div class="carousel-caption">
                   <h4> <%=hottest.get(1).getName()%></h4>
                   <p><%=hottest.get(1).getDescription()%></p>

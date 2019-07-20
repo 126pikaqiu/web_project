@@ -1,4 +1,4 @@
-function showMessage(message, type = 2) {
+function showMessage(message, type = 2,time=1000) {
     let ele = $("#myModal .modal-body p");
     $(ele).html(message);
     let color;
@@ -13,5 +13,5 @@ function showMessage(message, type = 2) {
     $("#myModal").modal('show');
     setTimeout(function () {
         $("#myModal").modal('hide');
-    },1000)
+    },time)
 }
