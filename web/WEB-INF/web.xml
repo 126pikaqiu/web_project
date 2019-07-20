@@ -23,6 +23,14 @@
         <servlet-name>searchServlet</servlet-name>
         <servlet-class>controller.SearchServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>manageUsersServlet</servlet-name>
+        <servlet-class>controller.ManageUsersServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>manageItemsServlet</servlet-name>
+        <servlet-class>controller.ManageItemsServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>loginServlet</servlet-name>
         <url-pattern>/users/login</url-pattern>
@@ -46,5 +54,13 @@
     <servlet-mapping>
         <servlet-name>searchServlet</servlet-name>
         <url-pattern>/search</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>manageUsersServlet</servlet-name>
+        <url-pattern>/users/manage/users</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>manageItemsServlet</servlet-name>
+        <url-pattern>/users/manage/items</url-pattern>
     </servlet-mapping>
 </web-app>

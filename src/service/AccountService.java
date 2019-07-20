@@ -3,12 +3,19 @@ package service;
 import bean.User;
 import dao.AccountDao;
 
+import java.util.ArrayList;
+
 /**
  * @author: jiaxing liu
  * @Date: 2019/7/15 16:05
  */
 public class AccountService {
     private AccountDao accountDao;
+
+    public ArrayList<User> getAllUsers(String userType) {
+        return accountDao.getAllUser(userType);
+    }
+
     private static class Cryption{
         static String encrypt(String text){
             return convertMD5(text);
@@ -42,10 +49,16 @@ public class AccountService {
 //        return passwordFromDatabase.equals(passwordFromUser);
         return accountDao.getUser(name).getPwd().equals(pwd);
     }
+    public boolean register(User user) {
+        return accountDao.saveUser(user);
+    }
     public User getUser(String name) {
         return accountDao.getUser(name);
     }
     public void destroy(){
         accountDao.destroy();
+    }
+    public boolean updateUser(User user){
+        return accountDao.updateUser(user);
     }
 }

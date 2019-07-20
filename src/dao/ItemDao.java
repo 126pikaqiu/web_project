@@ -71,7 +71,7 @@ public class ItemDao extends Dao {
         return items;
     }
 
-    public SearchResult getItemsByOrder(String searchKey, String order, int page) {
+    public SearchResult getItemsByOrder(String searchKey, String order, int page, boolean allPage) {
         if (order.equals("hot"))
             order = " Order By `like` desc";
         else if (order.equals("name")) {
@@ -80,6 +80,8 @@ public class ItemDao extends Dao {
         String sql = "SELECT * FROM artworks" + searchKey + order;
         System.out.println(sql);
         ArrayList<Item> totalItems = getItems(sql);
+        if (allPage)
+            return new SearchResult(totalItems, totalItems.size(), page);
         int start = (page - 1) * 9;
         ArrayList<Item> returnItems = new ArrayList<>();
         for (int i = start; i < start + 9; i++) {

@@ -23,7 +23,11 @@ public class ItemService {
     }
 
     public SearchResult getItemsByOrder(String searchKey, String order, int page) {
-        return itemDao.getItemsByOrder(searchKey, order, page);
+        return getItemsByOrder(searchKey, order, page, false);
+    }
+
+    public SearchResult getItemsByOrder(String searchKey, String order, int page, boolean allpage) {
+        return itemDao.getItemsByOrder(searchKey, order, page, allpage);
     }
 
     public Item getItem(int itemID) {
