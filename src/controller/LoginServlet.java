@@ -1,5 +1,6 @@
 package controller;
 
+import com.alibaba.fastjson.JSON;
 import service.AccountService;
 import bean.User;
 
@@ -9,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.io.OutputStream;
 
 /**
  * @author: jiaxing liu
@@ -44,5 +46,18 @@ public class LoginServlet extends HttpServlet {
             session.setAttribute("user",null);
             resp.setStatus(401);
         }
+    }
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String name = req.getParameter("username");
+        User user = (User) req.getSession().getAttribute("user");
+        if(name == null || user==null){
+            resp.setStatus(400);
+            return;
+        }
+        OutputStream outputStream = resp.getOutputStream();
+        resp.setStatus(200);
+        outputStream.write(JSON.toJSONString(accoutService.getUsers(name,user.getUserID())).getBytes());
     }
 }

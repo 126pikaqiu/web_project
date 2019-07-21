@@ -4,7 +4,10 @@ var api = {
     'add_collection':'collections/add',
     'delete_collection':'collections/delete',
     'register': 'users/register',
-    'userInfo': 'users/info'
+    'user_info': 'users/info',
+    'all_friends': 'friends/all',
+    'all_friends_request': 'friends/all',
+    'all_friends_receive': 'friends/all'
 };
 
 function axios(option){

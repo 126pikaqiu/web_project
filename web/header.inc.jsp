@@ -51,4 +51,5 @@
 <script src="templates/js/api/index.js"></script>
 <script src="templates/js/api/users.js"></script>
 <script src="templates/js/api/collections.js"></script>
+<script src="templates/js/api/search.js"></script>
 

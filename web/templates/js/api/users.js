@@ -22,14 +22,35 @@ function register(data) {
 }
 function getUserInfor() {
     return axios({
-        url: api.userInfo,
+        url: api.user_info,
         type: 'get'
     })
 }
 function updateUserInfor(data) {
     return axios({
-        url: api.userInfo,
+        url: api.user_info,
         type: 'post',
+        data:data
+    })
+}
+function getAllFriends() {
+    return axios({
+        url: api.all_friends,
+        type: 'get',
+        data:data
+    })
+}
+function getAllFriendsRequest() {
+    return axios({
+        url: api.all_friends_request,
+        type: 'get',
+        data:data
+    })
+}
+function getAllFriendsReceive() {
+    return axios({
+        url: api.all_friends_receive,
+        type: 'get',
         data:data
     })
 }

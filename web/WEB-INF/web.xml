@@ -23,6 +23,10 @@
         <servlet-name>modifyServlet</servlet-name>
         <servlet-class>controller.ModifyUserServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>friends</servlet-name>
+        <servlet-class>controller.FriendsManageServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>loginServlet</servlet-name>
         <url-pattern>/users/login</url-pattern>
@@ -41,10 +45,10 @@
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>collectionServlet</servlet-name>
-        <url-pattern>/collections/add</url-pattern>
+        <url-pattern>/collections/*</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>collectionServlet</servlet-name>
-        <url-pattern>/collections/delete</url-pattern>
+        <servlet-name>friends</servlet-name>
+        <url-pattern>/friends/*</url-pattern>
     </servlet-mapping>
 </web-app>

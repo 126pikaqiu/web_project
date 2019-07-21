@@ -3,6 +3,8 @@ package service;
 import bean.User;
 import dao.AccountDao;
 
+import java.util.ArrayList;
+
 /**
  * @author: jiaxing liu
  * @Date: 2019/7/15 16:05
@@ -53,5 +55,8 @@ public class AccountService {
     }
     public boolean updateUser(User user){
         return accountDao.updateUser(user);
+    }
+    public ArrayList<User> getUsers(String name,int id) {
+        return accountDao.getUsers(name,id);
     }
 }
