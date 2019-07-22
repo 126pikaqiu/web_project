@@ -34,15 +34,14 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li><a href="collection.jsp">查看收藏夹</a></li>
-                        <li><a href="#">个人中心</a></li>
-                        <li><a href="#">信箱</a></li>
+                        <li><a href="dashboard/index.jsp">用户中心</a></li>
                         <li class="divider"></li>
                         <li><a href="#" onclick='Logout("<%= session.getAttribute("url")%>")'>退出登录</a></li>
                     </ul>
                 </li>
             <%}%>
             <% if(session.getAttribute("permission") != null && (Integer)(session.getAttribute("permission")) == 2) {%>
-                <li><a href="dashboard.jsp"><span class="glyphicon glyphicon-dashboard"></span>控制台</a></li>
+                <li><a href="dashboard/index.jsp"><span class="glyphicon glyphicon-dashboard"></span>控制台</a></li>
             <%}%>
         </ul>
     </div>
@@ -50,6 +49,7 @@
 <script src="templates/js/header.inc.js"></script>
 <script src="templates/js/api/index.js"></script>
 <script src="templates/js/api/users.js"></script>
+<script src="templates/js/api/item.js"></script>
 <script src="templates/js/api/collections.js"></script>
 <script src="templates/js/api/search.js"></script>
 

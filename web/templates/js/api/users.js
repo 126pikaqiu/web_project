@@ -12,3 +12,18 @@ function login(data) {
         data: data
     })
 }
+
+function register(data) {
+    return axios({
+        url: api.register,
+        type: 'post',
+        data: data
+    })
+}
+function updateUserInfor(data) {
+    return axios({
+        url: api.user_info,
+        type: 'post',
+        data:data
+    })
+}

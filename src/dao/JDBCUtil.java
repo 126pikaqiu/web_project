@@ -10,7 +10,7 @@ import java.sql.SQLException;
  */
 public class JDBCUtil {
     public static Connection getConnection(){
-        String jdbcUrl = "jdbc:mysql://111.231.218.101:3306/webproject?useUnicoding=true&characterEncoding=utf-8";
+        String jdbcUrl = "jdbc:mysql://111.231.218.101:3306/webproject";
         String user = "root";
         String pwd = "126LiuJia$";
         String diverClass = "com.mysql.jdbc.Driver";

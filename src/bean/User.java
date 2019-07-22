@@ -75,6 +75,14 @@ public class User {
         this.signature = signature;
     }
 
+    public User(String name, String pwd, String email,String signature, int permission) {
+        this.name = name;
+        this.pwd = pwd;
+        this.email = email;
+        this.signature = signature;
+        this.permission = permission;
+    }
+
     public User(int userID, String name, String pwd, String email, String signature) {
         this.userID = userID;
         this.name = name;

@@ -17,7 +17,7 @@ public class SearchResult {
 
     }
 
-    public SearchResult(ArrayList<Item> items,int pageNum,int currentPageNum){
+    public SearchResult(ArrayList<Item> items, int pageNum, int currentPageNum){
         this.items = items;
         this.pageNum = pageNum;
         this.currentPageNum = currentPageNum;

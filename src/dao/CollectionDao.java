@@ -21,35 +21,15 @@ public class CollectionDao extends Dao{
         } else {
             String sql = "insert into collections (userID,itemID) values ("
                     + collection.getUserID() + ", " + collection.getItemID() + ")";
-            try {
-                Statement statement = connection.createStatement();
-                int count = statement.executeUpdate(sql);
-                statement.close();
-                result = count > 0;
-            }catch (SQLException e){
-                e.printStackTrace();
-            }
+            result = doUpdateSql(sql);
         }
         return result;
     }
 
     public boolean delete(Collection collection){
-        boolean result = true;
-        if (!getCollections(collection.getUserID()).contains(collection)) {
-            return result;
-        } else {
-            String sql = "delete from collections where userID="
-                    + collection.getUserID() + " and itemID=" + collection.getItemID() + "";
-            try {
-                Statement statement = connection.createStatement();
-                int count = statement.executeUpdate(sql);
-                result = count > 0;
-                statement.close();
-            }catch (SQLException e){
-                e.printStackTrace();
-            }
-        }
-        return result;
+        String sql = "delete from collections where userID="
+                + collection.getUserID() + " and itemID=" + collection.getItemID() + "";
+        return doUpdateSql(sql);
     }
 
     ArrayList<Collection> getCollections(int userID) {
@@ -69,5 +49,18 @@ public class CollectionDao extends Dao{
         }
         return collections;
     }
+    public boolean doUpdateSql(String sql){
+        boolean result = true;
+        try {
+            Statement statement = connection.createStatement();
+            int count = statement.executeUpdate(sql);
+            statement.close();
+            result = count > 0;
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+        return result;
+    }
+
 
 }

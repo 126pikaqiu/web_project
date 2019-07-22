@@ -12,14 +12,28 @@ import java.util.ArrayList;
  */
 public class ItemService {
     private ItemDao itemDao;
-
     public void init() {
         itemDao = new ItemDao();
         itemDao.init();
     }
-
-    public ArrayList<Item> getItems(int userID) {
+    public ArrayList<Item>  getItems(int userID) {
         return itemDao.getItems(userID);
+    }
+
+    public Item getItem(int itemID) {
+        return itemDao.getItem(itemID);
+    }
+
+    public ArrayList<Item> getLatest(){
+        return itemDao.getLatest();
+    }
+
+    public ArrayList<Item> getHottest(){
+        return itemDao.getHottest();
+    }
+
+    public boolean addHot(int itemID) {
+        return itemDao.addHot(itemID);
     }
 
     public SearchResult getItemsByOrder(String searchKey, String order, int page) {
@@ -29,16 +43,14 @@ public class ItemService {
     public SearchResult getItemsByOrder(String searchKey, String order, int page, boolean allpage) {
         return itemDao.getItemsByOrder(searchKey, order, page, allpage);
     }
-
-    public Item getItem(int itemID) {
-        return itemDao.getItem(itemID);
+    public boolean updateItem(Item item) {
+        return itemDao.updateItem(item);
     }
 
-    public ArrayList<Item> getLatest() {
-        return itemDao.getLatest();
+    public boolean deleteItem(int id) {
+        return itemDao.deleteItem(id);
     }
-
-    public ArrayList<Item> getHottest() {
-        return itemDao.getHottest();
+    public boolean save(Item item){
+        return itemDao.save(item);
     }
 }

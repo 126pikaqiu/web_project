@@ -35,4 +35,5 @@ public class CollectionServlet extends HttpServlet {
             resp.setStatus(400);
         }
     }
+
 }

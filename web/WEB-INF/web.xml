@@ -12,6 +12,10 @@
         <servlet-class>controller.RegisterServlet</servlet-class>
     </servlet>
     <servlet>
+        <servlet-name>itemServlet</servlet-name>
+        <servlet-class>controller.ItemServlet</servlet-class>
+    </servlet>
+    <servlet>
         <servlet-name>collectionServlet</servlet-name>
         <servlet-class>controller.CollectionServlet</servlet-class>
     </servlet>
@@ -19,6 +23,42 @@
         <servlet-name>logoutServlet</servlet-name>
         <servlet-class>controller.LogoutServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>modifyServlet</servlet-name>
+        <servlet-class>controller.ModifyUserServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>friends</servlet-name>
+        <servlet-class>controller.FriendsManageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>loginServlet</servlet-name>
+        <url-pattern>/users/login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>itemServlet</servlet-name>
+        <url-pattern>/items/addhot</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>modifyServlet</servlet-name>
+        <url-pattern>/users/info</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>registerServlet</servlet-name>
+        <url-pattern>/users/register</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>logoutServlet</servlet-name>
+        <url-pattern>/users/logout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>collectionServlet</servlet-name>
+        <url-pattern>/collections/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>friends</servlet-name>
+        <url-pattern>/friends/*</url-pattern>
+    </servlet-mapping>
     <servlet>
         <servlet-name>searchServlet</servlet-name>
         <servlet-class>controller.SearchServlet</servlet-class>
@@ -31,18 +71,6 @@
         <servlet-name>manageItemsServlet</servlet-name>
         <servlet-class>controller.ManageItemsServlet</servlet-class>
     </servlet>
-    <servlet-mapping>
-        <servlet-name>loginServlet</servlet-name>
-        <url-pattern>/users/login</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>registerServlet</servlet-name>
-        <url-pattern>/users/register</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>logoutServlet</servlet-name>
-        <url-pattern>/users/logout</url-pattern>
-    </servlet-mapping>
     <servlet-mapping>
         <servlet-name>collectionServlet</servlet-name>
         <url-pattern>/collections/add</url-pattern>

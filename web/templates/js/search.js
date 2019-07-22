@@ -14,10 +14,7 @@ function bindEvents() {
         changePageTo(this.innerHTML);
         pageNum = parseInt(this.innerHTML);
     });
-    //所有查看按钮的点击
-    $(".lay-item .lay-bt").click(function () {
-        window.open($($(".lay-item a")[$(".lay-item .lay-bt").index($(this))]).attr("href"));
-    });
+
     //enter检测
     $("#key").keydown(function (e) {
         if (e.keyCode === 13) {
@@ -149,6 +146,10 @@ function changePageTo(page) {
     search(page);
 }
 
+function opsn(itemID) {
+    window.open("item.jsp?id=" + itemID);
+}
+
 //搜索并返回数据
 function search(page) {
     pageNum = parseInt(page);
@@ -157,7 +158,6 @@ function search(page) {
     let data = {"key": checkKey(key), "order": order, "page": page};
     $.when(searchByOrder(data))
         .done(function (msg) {
-            console.log(msg);
             msg = eval("("+msg+")");
             itemNum = msg["pageNum"];
             msg = msg["items"];
@@ -166,9 +166,8 @@ function search(page) {
                 $($(".lay-item a")[i]).attr("href", "item.jsp?id=" + msg[i]["id"]);
                 $($(".lay-item img")[i]).attr("src", msg[i]["img"]);
                 $($(".lay-title")[i]).html(msg[i]["name"]);
-                $($("button.lay-bt")[i]).click(function () {
-                    window.location.href = "item.jsp?id=" + msg[i]["id"];
-                });
+                $($("button.lay-bt")[i*2]).attr("onclick","opsn(" + msg[i]["id"] + ")");
+                $($("button.lay-bt")[i*2 + 1]).attr("onclick","opsn(" + msg[i]["id"] + ")");
                 $($(".hot")[i]).html(msg[i]["hot"]);
                 $($(".lay-des")[i]).html(msg[i]["description"].substr(0, 30) + "...");
             }
@@ -201,10 +200,10 @@ function checkKey(key) {
     let result = {};
     result["unsure"] = '';
     key = key.toLowerCase();
-    key = key.replace("少于","<").replace("是","").replace("为","").replace("是","").replace("=","").replace("artisit","&artisit=").replace("title","&title=").
-    replace("description","&description=").replace("hot","&hot=").replace("year","&yearOfWork=").replace("genre","&genre=").replace("年份","&yearOfWork=").replace("多于",">").
-    replace("小于","<").replace("大于",">").replace("作者",'&artist=').replace("作品名","title=").
-    replace("描述",'&description=').replace("热度",'&hot=').replace("流派",'&genre=');
+    key = key.replace("少于","<").replace("是","").replace("为","").replace("是","").replace("=","").replace("name","&name=").
+    replace("description","&description=").replace("hot","&`like`=").replace("year","&yearOfWork=").replace("genre","&genre=").replace("年份","&yearOfWork=").replace("多于",">").
+    replace("小于","<").replace("大于",">").replace("作品名","name=").
+    replace("描述",'&description=').replace("热度",'&`like`=').replace("类型",'&genre=');
     let keys = key.split("&");
     for(let i in keys){
         if(keys[i].indexOf("=") === -1){
@@ -219,12 +218,12 @@ function checkKey(key) {
         }
     }
     let index = 0;
-    let sql = "";
+    let sql = " where 1=1 ";
     for(let i in result){
         if(i === "unsure"){
             if(result[i])
-                sql += " AND (artist LIKE '%" + result[i] + "%' or title LIKE '%"+ result[i] + "%' or description LIKE '%" + result[i] + "%')";
-        }else if(i === "price" || i === "view" || i === "yearOfWork"){
+                sql += " AND (location LIKE '%" + result[i] + "%' or name LIKE '%"+ result[i] + "%' or description LIKE '%" + result[i] + "%')";
+        }else if(i === "`like`" || i === "yearOfWork"){
             let number = result[i].replace(/[^0-9]/ig, "");
             if(!number){
                 continue;

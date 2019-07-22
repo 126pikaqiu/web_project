@@ -5,8 +5,9 @@ package bean;
  * @Date: 2019/7/16 15:30
  */
 public class Item {
-    private String IMG_BASE_SRC="templates/img/art_img/";
-    private String VIDEO_BASE_SRC="templates/videos/";
+    private String IMG_BASE_SRC = "templates/img/art_img/";
+    private String VIDEO_BASE_SRC = "templates/videos/";
+
     public int getId() {
         return id;
     }
@@ -55,29 +56,49 @@ public class Item {
         this.hot = hot;
     }
 
-    public String getTime() {
+    public int getTime() {
         return time;
     }
 
-    public void setTime(String year) {
+    public void setTime(int year) {
         this.time = year;
     }
 
-    public Item(int id, String name, String img, String description, String video, int hot, String time, String location,String genre) {
+    public Item(int id, String name, String img, String description, String video, int hot, int time, String location, String genre) {
         this.id = id;
         this.name = name;
-        this.img = IMG_BASE_SRC + img;
+        if (img.contains(IMG_BASE_SRC))
+            this.img = img;
+        else this.img = IMG_BASE_SRC + img;
         this.description = description;
-        this.video = VIDEO_BASE_SRC + video;
+        if (video.contains(VIDEO_BASE_SRC))
+            this.video = video;
+        else this.video = VIDEO_BASE_SRC + video;
         this.hot = hot;
         this.time = time;
         this.location = location;
         this.genre = genre;
     }
 
-    public Item(){}
+    public Item(String name, String img, String description, String video, int hot, int time, String location, String genre) {
+        this.name = name;
+        if (img.contains(IMG_BASE_SRC))
+            this.img = img;
+        else this.img = IMG_BASE_SRC + img;
+        this.description = description;
+        if (video.contains(VIDEO_BASE_SRC))
+            this.video = video;
+        else this.video = VIDEO_BASE_SRC + video;
+        this.hot = hot;
+        this.time = time;
+        this.location = location;
+        this.genre = genre;
+    }
 
-    public Item(int id, String name, int hot, String time) {
+    public Item() {
+    }
+
+    public Item(int id, String name, int hot, int time) {
         this.id = id;
         this.name = name;
         this.hot = hot;
@@ -90,7 +111,7 @@ public class Item {
     private String description;
     private String video;
     private int hot;
-    private String time;
+    private int time;
 
     public String getGenre() {
         return genre;
@@ -111,4 +132,32 @@ public class Item {
     }
 
     private String location;
+
+    public String getTimeReleased() {
+        return timeReleased;
+    }
+
+    public void setTimeReleased(String timeReleased) {
+        this.timeReleased = timeReleased;
+    }
+
+    public Item(int id, String name, String img, String description, String video, int hot, int time, String location, String genre, String timeReleased) {
+        this.id = id;
+        this.name = name;
+        if (img.contains(IMG_BASE_SRC))
+            this.img = img;
+        else this.img = IMG_BASE_SRC + img;
+        this.description = description;
+        if (video.contains(VIDEO_BASE_SRC))
+            this.video = video;
+        else this.video = VIDEO_BASE_SRC + video;
+        this.hot = hot;
+        this.time = time;
+        this.location = location;
+        this.genre = genre;
+        this.timeReleased = timeReleased;
+    }
+
+    private String timeReleased;
 }
+

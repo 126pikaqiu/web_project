@@ -28,17 +28,6 @@
 <%@include file="all.inc.jsp" %>
 <div class="main">
     <div class="txt-head">
-        <div class="logo-con">
-            <img src="" class="log-img" alt="艺术品之家logo" title="艺术品之家">
-        </div>
-        <div class="title">
-            <div class="title-uk">
-                Art Store
-            </div>
-            <div class="title-cn">
-                艺术品之家
-            </div>
-        </div>
         <div class="surf-header">
             <input type="text" id="key" value="<%=searchKey%>" name="key"/>
             <label id="search"><a href="javascript:;">搜 索</a></label>

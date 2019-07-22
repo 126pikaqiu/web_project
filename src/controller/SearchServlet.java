@@ -1,6 +1,5 @@
 package controller;
 
-import bean.Item;
 import bean.SearchResult;
 import com.alibaba.fastjson.JSON;
 import service.ItemService;
@@ -12,7 +11,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
 
 public class SearchServlet extends HttpServlet {
     private ItemService itemService;

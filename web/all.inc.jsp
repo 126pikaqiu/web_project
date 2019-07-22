@@ -8,3 +8,4 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@include file="message.inc.jsp"%>
 <%@include file="header.inc.jsp"%>
+<script src="templates/js/all.js"></script>

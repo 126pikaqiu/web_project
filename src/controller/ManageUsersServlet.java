@@ -51,8 +51,9 @@ public class ManageUsersServlet extends HttpServlet {
                 String name = req.getParameter("username");
                 String pwd = req.getParameter("pwd");
                 String email = req.getParameter("email");
+                String signature = req.getParameter("signature");
                 int permission = Integer.parseInt(req.getParameter("permission"));
-                if (name != null && pwd != null && accountService.register(new User(name, pwd, email, permission))) {
+                if (name != null && pwd != null && accountService.register(new User(name, pwd, email,signature, permission))) {
                     resp.setStatus(200);
                 } else {
                     resp.setStatus(401);
@@ -62,18 +63,19 @@ public class ManageUsersServlet extends HttpServlet {
                 int permission2 = Integer.parseInt(req.getParameter("permission"));
                 int newPermission = 3 - permission2;
                 int id = Integer.parseInt(req.getParameter("id"));
-                String name2 = req.getParameter("username");
-                String pwd2 = req.getParameter("pwd");
-                String email2 = req.getParameter("email");
-                String signature2 = req.getParameter("signature");
-                if (accountService.updateUser(new User(id, name2, pwd2, email2, signature2, newPermission))) {
+                if (accountService.updateUserPermission(id,newPermission)) {
                     resp.setStatus(200);
                 } else {
                     resp.setStatus(401);
                 }
                 break;
             case "delete":
-
+                int id2 = Integer.parseInt(req.getParameter("id"));
+                if (accountService.deleteUser(id2)) {
+                    resp.setStatus(200);
+                } else {
+                    resp.setStatus(401);
+                }
                 break;
         }
     }
