@@ -1,6 +1,7 @@
 package service;
 
 import bean.Friend;
+import bean.HomePage;
 import bean.User;
 import dao.FriendDao;
 
@@ -40,8 +41,11 @@ public class FriendService {
     public boolean saveFriendsAddRequest(int userID1, int userID2){
         return friendDao.saveFriendsAddRequest((new Friend(userID1,userID2)));
     }
-    public User getUser(int userID) {
-        return friendDao.getUser(userID);
+    public HomePage getHomePage(int userID) {
+        return friendDao.getHomePage(userID);
+    }
+    public ArrayList<User> getRecommends(int userID) {
+        return friendDao.getRecommends(userID);
     }
 
 }

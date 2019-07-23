@@ -22,27 +22,6 @@ public class AccountService {
     public boolean updateUserPermission(int id, int newPermission) {
         return accountDao.updateUserPermission(id,newPermission);
     }
-    private static class Cryption{
-        static String encrypt(String text){
-            return convertMD5(text);
-        }
-        static String decrypt(String ciphertext){
-            return convertMD5(convertMD5(ciphertext));
-        }
-        static String decryptMD5(String ciphertext){
-            return convertMD5(convertMD5(ciphertext));
-        }
-        private static String convertMD5(String inStr){
-
-            char[] a = inStr.toCharArray();
-            for (int i = 0; i < a.length; i++){
-                a[i] = (char) (a[i] ^ 't');
-            }
-            return new String(a);
-
-        }
-
-    }
     public AccountService(){
         accountDao = new AccountDao();
     }
@@ -50,10 +29,7 @@ public class AccountService {
         accountDao.init();
     }
     public boolean login(String name, String pwd){
-//        String passwordFromUser = Cryption.convertMD5(pwd);
-//        String passwordFromDatabase = Cryption.decrypt(accountDao.getUser(name).getPwd());
-//        return passwordFromDatabase.equals(passwordFromUser);
-        return accountDao.getUserLiu(name).getPwd().equals(pwd);
+        return accountDao.login(name,pwd);
     }
     public boolean register(User user) {
         return accountDao.saveUser(user);

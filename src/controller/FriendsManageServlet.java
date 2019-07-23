@@ -42,7 +42,10 @@ public class FriendsManageServlet extends HttpServlet {
                 outputStream.write(JSON.toJSONString(friendService.getAllFriendsRequest(user.getUserID())).getBytes());
                 break;
             case "info":
-                outputStream.write(JSON.toJSONString(friendService.getUser(Integer.parseInt(userID))).getBytes());
+                outputStream.write(JSON.toJSONString(friendService.getHomePage(Integer.parseInt(userID))).getBytes());
+                break;
+            case "recommends":
+                outputStream.write(JSON.toJSONString(friendService.getRecommends(user.getUserID())).getBytes());
                 break;
 
         }

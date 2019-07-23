@@ -1,13 +1,12 @@
 package dao;
 
-import bean.Collection;
-import bean.Friend;
-import bean.User;
+import bean.*;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author: jiaxing liu
@@ -61,9 +60,9 @@ public class FriendDao extends Dao {
     }
 
     public boolean updateFriendRequest(Friend friend){
-        String sql = "update friends_request set result=" + friend.getResult() + " where (userID1="
+        String sql = "update friends_request set result=" + friend.getResult() + " where ((userID1="
                     + friend.getId1() + " and userID2=" + friend.getId2() + ") or (userID2="
-                    + friend.getId1() + " and userID1=" + friend.getId2() + ")";
+                    + friend.getId1() + " and userID1=" + friend.getId2() + ")) and result=0 ";
         System.out.println(sql);
         return doUpdateSql(sql);
     }
@@ -126,11 +125,11 @@ public class FriendDao extends Dao {
     }
 
 
-    public String getUserName(int id) {
+    private String getUserName(int id) {
         return getUser(id).getName();
     }
 
-    public User getUser(int id) {
+    private User getUser(int id) {
         ResultSet rs=null;
         String sql = "select * from users where id=" + id;
         User user = null;
@@ -150,5 +149,89 @@ public class FriendDao extends Dao {
             e.printStackTrace();
         }
         return user;
+    }
+
+    public HomePage getHomePage(int id) {
+        User user = getUser(id);
+        ItemDao itemDao = new ItemDao();
+        itemDao.init();
+        List<Item> items = itemDao.getItems(id,1);
+        return new HomePage(user,items);
+    }
+
+    public ArrayList<User> getRecommends(int userID) {
+        ArrayList<User> users = new ArrayList<>();
+        ArrayList<User> friends = getAllFriends(userID);
+        User user = getUser(userID);
+        if(friends.size()>0) {
+            if(friends.size() == 1) {
+                User commonFriend = commonFriend(friends.get(0),user,null);
+                if(commonFriend != null){
+                    users.add(commonFriend);
+                }
+            }else {
+                User pre = friends.get(0);
+                for(int index = 1; index < friends.size() && users.size() < 4; index++) {
+                    User commonFriend = commonFriend(pre,friends.get(index),user);
+                    if(commonFriend != null){
+                        users.add(commonFriend);
+                    }
+                    pre = friends.get(index);
+                }
+            }
+        }
+        int size = users.size();
+        if(size < 4){
+            users.addAll(commonCollection(user,4-size));
+        }
+        return users;
+    }
+
+    private User commonFriend(User user1,User user2,User user) { //共同好友
+        ArrayList<User> friends1 = getAllFriends(user1.getUserID());
+        ArrayList<User> friends2 = getAllFriends(user2.getUserID());
+        for(User user3:friends1) {
+            if(!user3.equals(user) && friends2.contains(user3)){
+                return user3;
+            }
+        }
+        return null;
+    }
+
+    private ArrayList<User> commonCollection(User user,int count){ //有共同的收藏
+        CollectionDao collectionDao = new CollectionDao();
+        collectionDao.init();
+        ArrayList<Collection> collections = collectionDao.getCollections(user.getUserID());
+        collectionDao.destroy();
+        ArrayList<User> users = new ArrayList<>();
+        if(collections.size() > 0) {
+            String sql = "select * from collections where itemID=";
+            for(int i = 0; i < collections.size()&&i<count; i++) {
+                doQeurySql(sql + collections.get(i).getItemID()).forEach(collection -> {
+                    User user1 = getUser(collection.getUserID());
+                    if(!user1.equals(user)){
+                        users.add(user1);
+                    }
+                });
+            }
+        }
+        return users;
+    }
+
+    private ArrayList<Collection> doQeurySql(String sql) {
+        ArrayList<Collection> collections = new ArrayList<>();
+        ResultSet rs=null;
+        try {
+            Statement statement = connection.createStatement();
+            rs = statement.executeQuery(sql);
+            while (rs.next()){
+                collections.add(new Collection(rs.getInt("userID"), rs.getInt("itemID")));
+            }
+            statement.close();
+            rs.close();
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+        return collections;
     }
 }

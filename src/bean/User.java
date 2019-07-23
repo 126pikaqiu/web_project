@@ -109,4 +109,33 @@ public class User {
         this.signature = user.signature;
         this.permission = user.permission;
     }
+
+    public String getLastLogin() {
+        return lastLogin;
+    }
+
+    public void setLastLogin(String lastLogin) {
+        this.lastLogin = lastLogin;
+    }
+
+    public User(int userID, String name, String pwd, String email, String signature, int permission, String lastLogin) {
+        this.userID = userID;
+        this.name = name;
+        this.pwd = pwd;
+        this.email = email;
+        this.permission = permission;
+        this.signature = signature;
+        this.lastLogin = lastLogin;
+    }
+
+    private String lastLogin;
+
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj instanceof User && userID == ((User) obj).userID){
+            return true;
+        }
+        return false;
+    }
 }

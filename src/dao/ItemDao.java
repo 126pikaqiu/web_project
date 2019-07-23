@@ -1,7 +1,9 @@
 package dao;
 
+import bean.Collection;
 import bean.Item;
 import bean.SearchResult;
+import bean.User;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -17,6 +19,16 @@ public class ItemDao extends Dao{
         return manageItem(item, sql);
     }
 
+    public ArrayList<Item> getItems(int userID,int permission) {
+        ArrayList<Item> items = new ArrayList<>();
+        CollectionDao collectionDao = new CollectionDao();
+        collectionDao.init();
+        collectionDao.getCollections(userID,permission).forEach(e->{
+            items.add(getItem(e.getItemID()));
+        });
+        collectionDao.destroy();
+        return items;
+    }
     public ArrayList<Item> getItems(int userID) {
         ArrayList<Item> items = new ArrayList<>();
         CollectionDao collectionDao = new CollectionDao();
@@ -33,8 +45,11 @@ public class ItemDao extends Dao{
         ArrayList<Item> items = getItems(sql + itemID);
         if(items.size() > 0)
             return items.get(0);
-        else
-            return null;
+        else{
+            sql = "select * from artworks where id=248";
+            items = getItems(sql);
+            return items.get(0);
+        }
     }
 
     public ArrayList<Item> getLatest(){
@@ -53,7 +68,6 @@ public class ItemDao extends Dao{
         try {
             statement = connection.createStatement();
             int count = statement.executeUpdate(sql);
-            System.out.println(count);
             statement.close();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -93,7 +107,6 @@ public class ItemDao extends Dao{
             order = " Order By `name`";
         }
         String sql = "SELECT * FROM artworks" + searchKey + order;
-        System.out.println(sql);
         ArrayList<Item> totalItems = getItems(sql);
         if (allPage)
             return new SearchResult(totalItems, totalItems.size(), page);
@@ -150,4 +163,41 @@ public class ItemDao extends Dao{
         }
         return result;
     }
+
+    private ArrayList<Item> getRecommend(Item item, int userID, int count) {
+        ArrayList<Item> items = getItems(userID);//自己的收藏夹内容
+        ArrayList<Item> result = new ArrayList<>();
+        int size = items.size();
+        if(size > 0) {
+            result.addAll(getSimilar(items.get(size - 1),count));
+        }
+        return result;
+    }
+    public ArrayList<Item> getSimilar(Item item,int count) {
+        String name = item.getName();
+        StringBuilder sql = new StringBuilder("select * from artworks where (1=2 ");
+        for(int i = 0; i < name.length(); i++) {
+            sql.append(" or name like '%").append(name.charAt(i)).append("%' or description like '%").append(name.charAt(i)).append("%'");
+        }
+        sql.append(" or genre='").append(item.getGenre()).append("') and id!= ").append(item.getId());
+        sql.append(" Order By `timeReleased` desc limit ").append(count);
+        return getItems(sql.toString());
+    }
+
+
+    public ArrayList<Item> getRecommends(Item item,int userID, int count) {
+        FriendDao friendDao = new FriendDao();
+        friendDao.init();
+        ArrayList<User> friends = friendDao.getAllFriends(userID);//好友
+        friendDao.destroy();
+        ArrayList<Item> result = new ArrayList<>(getRecommend(item, userID, count / 3));//三分之一根据自己最近收藏进行推荐
+        if( friends.size() > 0){
+            User user = friends.get((int)(Math.random() * friends.size()));//随机好友
+            result.addAll(getRecommend(item,user.getUserID(),count / 6));
+        }
+        int left = count - result.size();//剩下的根据好友的收藏夹推荐
+        result.addAll(getSimilar(item, left));//一半的相似产品
+        return result;
+    }
+
 }

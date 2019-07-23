@@ -35,7 +35,6 @@ public class ManageUsersServlet extends HttpServlet {
         if (users != null) {
             resp.setStatus(200);
             OutputStream out = resp.getOutputStream();
-            System.out.println(JSON.toJSONString(users));
             out.write(JSON.toJSONString(users).getBytes(StandardCharsets.UTF_8));
         } else {
             resp.setStatus(400);

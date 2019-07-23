@@ -33,14 +33,21 @@ public class CollectionDao extends Dao{
     }
 
     ArrayList<Collection> getCollections(int userID) {
-        ArrayList<Collection> collections = new ArrayList<>();
         String sql = "select * from collections where userID=" + userID;
+        return doQeurySql(sql);
+    }
+    ArrayList<Collection> getCollections(int userID,int permission) {
+        String sql = "select * from collections where userID=" + userID + " and permission=" + permission;
+        return doQeurySql(sql);
+    }
+    private ArrayList<Collection> doQeurySql(String sql) {
+        ArrayList<Collection> collections = new ArrayList<>();
         ResultSet rs=null;
         try {
             Statement statement = connection.createStatement();
             rs = statement.executeQuery(sql);
             while (rs.next()){
-                collections.add(new Collection(userID, rs.getInt("itemID")));
+                collections.add(new Collection(rs.getInt("userID"), rs.getInt("itemID")));
             }
             statement.close();
             rs.close();
@@ -62,5 +69,16 @@ public class CollectionDao extends Dao{
         return result;
     }
 
+    public boolean update(Collection collection){
+        String sql = "update collections set `permission`=1-`permission` where userID=" + collection.getUserID()
+                + " and itemID=" + collection.getItemID();
+        return doUpdateSql(sql);
+    }
+
+    public boolean getPermission(Collection collection) {
+        String sql = "select * from  collections where permission=1 && userID=" + collection.getUserID()
+                + " and itemID=" + collection.getItemID();
+        return doQeurySql(sql).size()>0;
+    }
 
 }

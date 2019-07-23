@@ -19,11 +19,11 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Java EE 6-Java EE 6" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="Tomcat 8.5.35" level="application_server_libraries" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Downloads/fastjson-1.2.58.jar!/" />
+          <root url="jar://$USER_HOME$/Desktop/fastjson-1.2.58.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -42,6 +42,15 @@
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/web/WEB-INF/lib/commons-io-2.6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/web/WEB-INF/lib/fastjson-1.2.58.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

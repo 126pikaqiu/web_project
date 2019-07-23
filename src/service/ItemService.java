@@ -16,10 +16,15 @@ public class ItemService {
         itemDao = new ItemDao();
         itemDao.init();
     }
+    public void destroy(){
+        itemDao.destroy();
+    }
+    public ArrayList<Item>  getItems(int userID,int permission) {
+        return itemDao.getItems(userID,permission);
+    }
     public ArrayList<Item>  getItems(int userID) {
         return itemDao.getItems(userID);
     }
-
     public Item getItem(int itemID) {
         return itemDao.getItem(itemID);
     }
@@ -52,5 +57,12 @@ public class ItemService {
     }
     public boolean save(Item item){
         return itemDao.save(item);
+    }
+
+    public ArrayList<Item> getSimilar(Item item,int count) {
+        return itemDao.getSimilar(item,count);
+    }
+    public ArrayList<Item> getRecommends(Item item,int userID, int count) {
+        return itemDao.getRecommends(item,userID,count);
     }
 }

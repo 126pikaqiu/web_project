@@ -29,6 +29,22 @@ public class Collection {
     private int userID;
     private int itemID;
 
+    public Collection(int userID, int itemID, int permission) {
+        this.userID = userID;
+        this.itemID = itemID;
+        this.permission = permission;
+    }
+
+    public int getPermission() {
+        return permission;
+    }
+
+    public void setPermission(int permission) {
+        this.permission = permission;
+    }
+
+    private int permission;
+
     @Override
     public boolean equals(Object obj) {
         if(!(obj instanceof Collection)) {

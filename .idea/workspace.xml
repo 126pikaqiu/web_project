@@ -6,7 +6,751 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="277ec87e-742b-4d72-93d5-0f72a7e41b22" name="Default Changelist" comment="管理页面完成" />
+    <list default="true" id="277ec87e-742b-4d72-93d5-0f72a7e41b22" name="Default Changelist" comment="TO BE OVER">
+      <change afterPath="$PROJECT_DIR$/src/bean/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bean/SearchResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/ItemServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/ManageItemsServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/ManageUsersServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/SearchServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/commons-fileupload-1.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/commons-io-2.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/fastjson-1.2.58.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/DD_belatedPNG_0.0.8a-min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/Hui-iconfont/1.0.8/demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/Hui-iconfont/1.0.8/iconfont.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/Hui-iconfont/1.0.8/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/Hui-iconfont/1.0.8/iconfont.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/Hui-iconfont/1.0.8/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/Hui-iconfont/1.0.8/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/Hui-iconfont/1.0.8/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/My97DatePicker/4.8/WdatePicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/My97DatePicker/4.8/calendar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/My97DatePicker/4.8/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/My97DatePicker/4.8/lang/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/My97DatePicker/4.8/lang/zh-tw.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/My97DatePicker/4.8/skin/WdatePicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/My97DatePicker/4.8/skin/datePicker.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/My97DatePicker/4.8/skin/default/datepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/My97DatePicker/4.8/skin/default/img.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/My97DatePicker/4.8/skin/twoer/datepicker-dev.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/My97DatePicker/4.8/skin/twoer/datepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/My97DatePicker/4.8/skin/twoer/img.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/My97DatePicker/4.8/skin/twoer/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/My97DatePicker/4.8/skin/whyGreen/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/My97DatePicker/4.8/skin/whyGreen/datepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/My97DatePicker/4.8/skin/whyGreen/img.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/datatables/1.10.0/jquery.dataTables.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/expressInstall.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/html5shiv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/jquery.contextmenu/jquery.contextmenu.r2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/jquery.validation/1.14.0/additional-methods.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/jquery.validation/1.14.0/jquery.validate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/jquery.validation/1.14.0/messages_zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/jquery.validation/1.14.0/validate-methods.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/jquery/1.9.1/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/jquery/1.9.1/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/jselect-1.0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/layer/2.4/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/layer/2.4/skin/default/icon-ext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/layer/2.4/skin/default/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/layer/2.4/skin/default/loading-0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/layer/2.4/skin/default/loading-1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/layer/2.4/skin/default/loading-2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/layer/2.4/skin/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/laypage/1.2/laypage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/laypage/1.2/skin/laypage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/lightbox2/2.8.1/css/lightbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/lightbox2/2.8.1/examples.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/lightbox2/2.8.1/images/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/lightbox2/2.8.1/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/lightbox2/2.8.1/images/next.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/lightbox2/2.8.1/images/prev.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/lightbox2/2.8.1/js/lightbox-plus-jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/lightbox2/2.8.1/js/lightbox-plus-jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/lightbox2/2.8.1/js/lightbox-plus-jquery.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/lightbox2/2.8.1/js/lightbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/lightbox2/2.8.1/js/lightbox.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/lightbox2/2.8.1/js/lightbox.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/respond.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/squid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/swfobject.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/API_cn.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/API_en.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/apiCss/api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/apiCss/common.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/apiCss/common_ie6.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/apiCss/img/apiMenu.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/apiCss/img/apiMenu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/apiCss/img/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/apiCss/img/chinese.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/apiCss/img/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/apiCss/img/contact-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/apiCss/img/english.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/apiCss/img/header-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/apiCss/img/lightbulb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/apiCss/img/overlay_arrow.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/apiCss/img/overlay_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/apiCss/img/overlay_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/apiCss/img/overlay_close_IE6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/apiCss/img/zTreeStandard.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/apiCss/img/zTreeStandard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/apiCss/jquery-1.6.2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/apiCss/jquery.ztree.core-3.5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/apiCss/zTreeStyleForApi.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/fn.zTree._z.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/fn.zTree.destroy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/fn.zTree.getZTreeObj.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/fn.zTree.init.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.async.autoParam.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.async.contentType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.async.dataFilter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.async.dataType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.async.enable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.async.otherParam.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.async.type.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.async.url.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.callback.beforeAsync.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.callback.beforeCheck.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.callback.beforeClick.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.callback.beforeCollapse.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.callback.beforeDblClick.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.callback.beforeDrag.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.callback.beforeDragOpen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.callback.beforeDrop.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.callback.beforeEditName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.callback.beforeExpand.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.callback.beforeMouseDown.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.callback.beforeMouseUp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.callback.beforeRemove.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.callback.beforeRename.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.callback.beforeRightClick.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.callback.onAsyncError.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.callback.onAsyncSuccess.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.callback.onCheck.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.callback.onClick.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.callback.onCollapse.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.callback.onDblClick.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.callback.onDrag.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.callback.onDragMove.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.callback.onDrop.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.callback.onExpand.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.callback.onMouseDown.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.callback.onMouseUp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.callback.onNodeCreated.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.callback.onRemove.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.callback.onRename.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.callback.onRightClick.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.check.autoCheckTrigger.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.check.chkDisabledInherit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.check.chkStyle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.check.chkboxType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.check.enable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.check.nocheckInherit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.check.radioType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.data.keep.leaf.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.data.keep.parent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.data.key.checked.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.data.key.children.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.data.key.name.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.data.key.title.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.data.key.url.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.data.simpleData.enable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.data.simpleData.idKey.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.data.simpleData.pIdKey.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.data.simpleData.rootPId.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.edit.drag.autoExpandTrigger.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.edit.drag.autoOpenTime.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.edit.drag.borderMax.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.edit.drag.borderMin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.edit.drag.inner.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.edit.drag.isCopy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.edit.drag.isMove.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.edit.drag.maxShowNodeNum.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.edit.drag.minMoveSize.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.edit.drag.next.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.edit.drag.prev.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.edit.editNameSelectAll.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.edit.enable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.edit.removeTitle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.edit.renameTitle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.edit.showRemoveBtn.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.edit.showRenameBtn.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.treeId.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.treeObj.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.view.addDiyDom.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.view.addHoverDom.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.view.autoCancelSelected.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.view.dblClickExpand.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.view.expandSpeed.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.view.fontCss.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.view.nameIsHTML.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.view.removeHoverDom.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.view.selectedMulti.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.view.showIcon.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.view.showLine.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.view.showTitle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/setting.view.txtSelectedEnable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/treeNode.check_Child_State.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/treeNode.check_Focus.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/treeNode.checked.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/treeNode.checkedOld.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/treeNode.children.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/treeNode.chkDisabled.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/treeNode.click.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/treeNode.diy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/treeNode.editNameFlag.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/treeNode.getCheckStatus.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/treeNode.getNextNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/treeNode.getParentNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/treeNode.getPreNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/treeNode.halfCheck.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/treeNode.icon.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/treeNode.iconClose.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/treeNode.iconOpen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/treeNode.iconSkin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/treeNode.isAjaxing.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/treeNode.isFirstNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/treeNode.isHidden.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/treeNode.isHover.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/treeNode.isLastNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/treeNode.isParent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/treeNode.level.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/treeNode.name.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/treeNode.nocheck.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/treeNode.open.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/treeNode.parentTId.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/treeNode.tId.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/treeNode.target.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/treeNode.url.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/treeNode.zAsync.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/zTreeObj.addNodes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/zTreeObj.cancelEditName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/zTreeObj.cancelSelectedNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/zTreeObj.checkAllNodes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/zTreeObj.checkNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/zTreeObj.copyNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/zTreeObj.destroy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/zTreeObj.editName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/zTreeObj.expandAll.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/zTreeObj.expandNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/zTreeObj.getChangeCheckedNodes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/zTreeObj.getCheckedNodes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/zTreeObj.getNodeByParam.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/zTreeObj.getNodeByTId.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/zTreeObj.getNodeIndex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/zTreeObj.getNodes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/zTreeObj.getNodesByFilter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/zTreeObj.getNodesByParam.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/zTreeObj.getNodesByParamFuzzy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/zTreeObj.getSelectedNodes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/zTreeObj.hideNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/zTreeObj.hideNodes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/zTreeObj.moveNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/zTreeObj.reAsyncChildNodes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/zTreeObj.refresh.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/zTreeObj.removeChildNodes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/zTreeObj.removeNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/zTreeObj.selectNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/zTreeObj.setChkDisabled.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/zTreeObj.setEditable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/zTreeObj.setting.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/zTreeObj.showNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/zTreeObj.showNodes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/zTreeObj.transformToArray.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/zTreeObj.transformTozTreeNodes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/cn/zTreeObj.updateNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/fn.zTree._z.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/fn.zTree.destroy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/fn.zTree.getZTreeObj.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/fn.zTree.init.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.async.autoParam.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.async.contentType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.async.dataFilter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.async.dataType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.async.enable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.async.otherParam.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.async.type.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.async.url.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.callback.beforeAsync.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.callback.beforeCheck.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.callback.beforeClick.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.callback.beforeCollapse.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.callback.beforeDblClick.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.callback.beforeDrag.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.callback.beforeDragOpen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.callback.beforeDrop.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.callback.beforeEditName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.callback.beforeExpand.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.callback.beforeMouseDown.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.callback.beforeMouseUp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.callback.beforeRemove.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.callback.beforeRename.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.callback.beforeRightClick.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.callback.onAsyncError.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.callback.onAsyncSuccess.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.callback.onCheck.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.callback.onClick.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.callback.onCollapse.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.callback.onDblClick.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.callback.onDrag.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.callback.onDragMove.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.callback.onDrop.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.callback.onExpand.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.callback.onMouseDown.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.callback.onMouseUp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.callback.onNodeCreated.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.callback.onRemove.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.callback.onRename.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.callback.onRightClick.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.check.autoCheckTrigger.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.check.chkDisabledInherit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.check.chkStyle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.check.chkboxType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.check.enable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.check.nocheckInherit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.check.radioType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.data.keep.leaf.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.data.keep.parent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.data.key.checked.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.data.key.children.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.data.key.name.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.data.key.title.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.data.key.url.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.data.simpleData.enable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.data.simpleData.idKey.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.data.simpleData.pIdKey.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.data.simpleData.rootPId.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.edit.drag.autoExpandTrigger.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.edit.drag.autoOpenTime.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.edit.drag.borderMax.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.edit.drag.borderMin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.edit.drag.inner.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.edit.drag.isCopy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.edit.drag.isMove.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.edit.drag.maxShowNodeNum.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.edit.drag.minMoveSize.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.edit.drag.next.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.edit.drag.prev.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.edit.editNameSelectAll.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.edit.enable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.edit.removeTitle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.edit.renameTitle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.edit.showRemoveBtn.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.edit.showRenameBtn.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.treeId.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.treeObj.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.view.addDiyDom.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.view.addHoverDom.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.view.autoCancelSelected.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.view.dblClickExpand.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.view.expandSpeed.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.view.fontCss.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.view.nameIsHTML.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.view.removeHoverDom.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.view.selectedMulti.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.view.showIcon.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.view.showLine.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.view.showTitle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/setting.view.txtSelectedEnable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/treeNode.check_Child_State.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/treeNode.check_Focus.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/treeNode.checked.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/treeNode.checkedOld.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/treeNode.children.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/treeNode.chkDisabled.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/treeNode.click.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/treeNode.diy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/treeNode.editNameFlag.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/treeNode.getCheckStatus.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/treeNode.getNextNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/treeNode.getParentNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/treeNode.getPreNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/treeNode.halfCheck.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/treeNode.icon.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/treeNode.iconClose.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/treeNode.iconOpen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/treeNode.iconSkin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/treeNode.isAjaxing.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/treeNode.isFirstNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/treeNode.isHidden.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/treeNode.isHover.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/treeNode.isLastNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/treeNode.isParent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/treeNode.level.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/treeNode.name.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/treeNode.nocheck.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/treeNode.open.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/treeNode.parentTId.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/treeNode.tId.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/treeNode.target.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/treeNode.url.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/treeNode.zAsync.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/zTreeObj.addNodes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/zTreeObj.cancelEditName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/zTreeObj.cancelSelectedNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/zTreeObj.checkAllNodes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/zTreeObj.checkNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/zTreeObj.copyNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/zTreeObj.destroy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/zTreeObj.editName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/zTreeObj.expandAll.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/zTreeObj.expandNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/zTreeObj.getChangeCheckedNodes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/zTreeObj.getCheckedNodes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/zTreeObj.getNodeByParam.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/zTreeObj.getNodeByTId.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/zTreeObj.getNodeIndex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/zTreeObj.getNodes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/zTreeObj.getNodesByFilter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/zTreeObj.getNodesByParam.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/zTreeObj.getNodesByParamFuzzy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/zTreeObj.getSelectedNodes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/zTreeObj.hideNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/zTreeObj.hideNodes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/zTreeObj.moveNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/zTreeObj.reAsyncChildNodes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/zTreeObj.refresh.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/zTreeObj.removeChildNodes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/zTreeObj.removeNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/zTreeObj.selectNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/zTreeObj.setChkDisabled.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/zTreeObj.setEditable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/zTreeObj.setting.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/zTreeObj.showNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/zTreeObj.showNodes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/zTreeObj.transformToArray.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/zTreeObj.transformTozTreeNodes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/api/en/zTreeObj.updateNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/css/metroStyle/img/line_conn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/css/metroStyle/img/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/css/metroStyle/img/metro.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/css/metroStyle/img/metro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/css/metroStyle/metroStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/css/zTreeStyle/img/diy/1_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/css/zTreeStyle/img/diy/1_open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/css/zTreeStyle/img/diy/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/css/zTreeStyle/img/diy/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/css/zTreeStyle/img/diy/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/css/zTreeStyle/img/diy/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/css/zTreeStyle/img/diy/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/css/zTreeStyle/img/diy/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/css/zTreeStyle/img/diy/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/css/zTreeStyle/img/diy/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/css/zTreeStyle/img/line_conn.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/css/zTreeStyle/img/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/css/zTreeStyle/img/zTreeStandard.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/css/zTreeStyle/img/zTreeStandard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/css/zTreeStyle/zTreeStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/js/jquery.ztree.all-3.5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/js/jquery.ztree.all-3.5.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/js/jquery.ztree.core-3.5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/js/jquery.ztree.core-3.5.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/js/jquery.ztree.excheck-3.5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/js/jquery.ztree.excheck-3.5.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/js/jquery.ztree.exedit-3.5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/js/jquery.ztree.exedit-3.5.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/js/jquery.ztree.exedit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/js/jquery.ztree.exhide-3.5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/lib/zTree/v3/js/jquery.ztree.exhide-3.5.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/member-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/product-add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/product-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui.admin/css/H-ui.admin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui.admin/css/H-ui.login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui.admin/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui.admin/images/acrossTab/acrossTab-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui.admin/images/admin-login-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui.admin/images/admin-loginform-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui.admin/images/cn.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui.admin/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui.admin/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui.admin/images/um.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui.admin/js/H-ui.admin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui.admin/js/de_DE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui.admin/js/md5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui.admin/skin/blue/acrossTab-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui.admin/skin/blue/acrossTab.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui.admin/skin/blue/icon_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui.admin/skin/blue/skin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui.admin/skin/default/acrossTab-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui.admin/skin/default/acrossTab.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui.admin/skin/default/icon_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui.admin/skin/default/skin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui.admin/skin/green/acrossTab-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui.admin/skin/green/acrossTab.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui.admin/skin/green/icon_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui.admin/skin/green/skin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui.admin/skin/orange/acrossTab-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui.admin/skin/orange/acrossTab.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui.admin/skin/orange/icon_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui.admin/skin/orange/skin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui.admin/skin/red/acrossTab-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui.admin/skin/red/acrossTab.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui.admin/skin/red/icon_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui.admin/skin/red/skin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui.admin/skin/yellow/acrossTab-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui.admin/skin/yellow/acrossTab.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui.admin/skin/yellow/icon_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui.admin/skin/yellow/skin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/css/H-ui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/css/H-ui.ie.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/css/H-ui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/css/H-ui.reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/Hui-tags/empty.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/acrossTab/acrossTab-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/acrossTab/acrossTab-close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/acrossTab/acrossTab.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/dataTable/sort_asc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/dataTable/sort_both.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/dataTable/sort_desc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/dropDown/icon-jt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/201.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/202.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/203.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/204.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/205.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/206.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/207.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/208.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/209.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/210.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/10.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/100.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/101.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/102.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/103.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/104.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/105.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/106.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/11.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/12.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/13.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/14.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/15.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/18.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/19.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/20.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/21.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/22.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/23.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/24.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/25.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/26.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/27.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/28.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/29.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/30.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/31.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/32.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/33.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/34.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/35.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/36.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/37.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/38.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/39.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/40.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/41.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/42.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/43.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/44.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/45.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/46.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/47.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/48.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/49.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/50.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/51.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/52.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/53.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/54.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/55.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/56.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/57.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/58.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/59.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/60.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/61.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/62.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/63.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/64.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/65.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/66.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/67.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/68.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/69.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/7.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/70.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/71.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/72.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/73.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/74.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/75.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/76.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/77.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/78.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/79.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/80.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/81.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/82.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/83.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/84.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/85.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/86.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/87.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/88.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/89.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/9.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/90.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/91.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/92.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/93.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/94.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/95.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/96.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/97.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/98.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/face/QQ/99.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/iCheck/aero.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/iCheck/aero@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/iCheck/blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/iCheck/blue@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/iCheck/green.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/iCheck/green@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/iCheck/grey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/iCheck/grey@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/iCheck/minimal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/iCheck/minimal@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/iCheck/orange.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/iCheck/orange@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/iCheck/pink.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/iCheck/pink@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/iCheck/purple.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/iCheck/purple@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/iCheck/red.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/iCheck/red@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/iCheck/yellow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/iCheck/yellow@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/iconpic-arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/jselect/iconpic-arrow-down2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/loading/loading-b.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/loading/loading-s.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/rollpic/unslider-arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/star/iconpic-star-S-default.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/star/iconpic-star-S.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/steps/step_arrow-active.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/steps/step_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/steps/step_bg-active.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/steps/step_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/ucnter/avatar-default-S.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/ucnter/avatar-default.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/ucnter/avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/ucnter/noavatar_small.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/validform/iconpic-error.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/validform/iconpic-right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/validform/iconpic-warning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/verticalTab/tabNav-active.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/verticalTab/tabNav-hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/verticalTab/tabNav.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/verticalTab/tabNav_right-active.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/verticalTab/tabNav_right-hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/verticalTab/tabNav_right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/images/verticalTab/tab_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/js/H-ui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/static/h-ui/js/H-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/temp/200x150.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/temp/Thumb/chai.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/temp/Thumb/chufang.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/temp/Thumb/keting.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/temp/Thumb/keting2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/temp/Thumb/keting3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/temp/Thumb/keting4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/temp/Thumb/shouju.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/temp/Thumb/shufang.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/temp/Thumb/weishengjian.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/temp/Thumb/weishengjian2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/temp/Thumb/woshi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/temp/Thumb/youyongchi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/temp/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/temp/big/chai.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/temp/big/chufang.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/temp/big/keting.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/temp/big/keting2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/temp/big/keting3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/temp/big/keting4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/temp/big/shouju.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/temp/big/shufang.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/temp/big/weishengjian.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/temp/big/weishengjian2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/temp/big/woshi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/temp/big/youyongchi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/temp/brand/ambio.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/temp/brand/dongpeng.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/temp/brand/shengxiang.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/temp/product/Thumb/5345.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/dashboard/temp/product/Thumb/6204.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/templates/css/search.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/templates/js/api/item.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/templates/js/api/search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/templates/js/md5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/templates/js/search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/web_project_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/web_project_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bean/Collection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bean/Collection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bean/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bean/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bean/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bean/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/CollectionServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/CollectionServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/FriendsManageServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/FriendsManageServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/ModifyUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ModifyUserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/RegisterServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/AccountDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/AccountDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/CollectionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/CollectionDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/FriendDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/FriendDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/ItemDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/ItemDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/CollectionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/CollectionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/FriendService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/FriendService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/ItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/ItemService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/all.inc.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/all.inc.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/collection.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/collection.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/dashboard.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/dashboard/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/dashboard/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/dashboard/friends-add-history.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/dashboard/friends-add-history.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/dashboard/friends-add.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/dashboard/friends-add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/dashboard/friends-chat.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/dashboard/friends-chat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/dashboard/friends-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/dashboard/friends-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/dashboard/member-add.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/dashboard/member-add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/dashboard/member-show.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/dashboard/member-show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/dashboard/templates/js/user-show.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/dashboard/user-modify.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/dashboard/user-modify.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/dashboard/user-show.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/dashboard/user-show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/dashboard/welcome.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/dashboard/welcome.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/header.inc.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/header.inc.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/item.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/item.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/rooter/rooter.default.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/rooter/rooter.default.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/search.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/search.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/js/all.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/js/all.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/js/api/collections.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/js/api/collections.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/js/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/js/api/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/js/api/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/js/api/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/js/collection.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/js/collection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/js/item.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/js/item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/js/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/js/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/js/register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/web_project.iml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,160 +772,117 @@
     <expand />
     <select />
   </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
+  <component name="FavoritesManager">
+    <favorites_list name="web_project" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.61374795">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/web/dashboard/product-list.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="361">
-                  <caret line="119" column="30" selection-start-line="119" selection-start-column="30" selection-end-line="119" selection-end-column="30" />
-                  <folding>
-                    <element signature="n#style#0;n#a#0;n#td#2;n#tr#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#a#0;n#td#8;n#tr#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#a#1;n#td#8;n#tr#0;n#!!top" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/controller/ManageItemsServlet.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="511">
-                  <caret line="102" column="71" selection-start-line="102" selection-start-column="65" selection-end-line="102" selection-end-column="71" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/web/dashboard/member-list.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="404">
-                  <caret line="127" column="29" selection-start-line="127" selection-start-column="29" selection-end-line="127" selection-end-column="29" />
-                  <folding>
-                    <element signature="n#style#0;n#a#0;n#td#5;n#tr#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#a#1;n#td#5;n#tr#0;n#!!top" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/web/dashboard/product-add.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2437">
-                  <caret line="199" selection-start-line="199" selection-end-line="199" />
-                  <folding>
-                    <element signature="n#style#0;n#input#0;n#span#0;n#div#0;n#div#5;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#input#0;n#span#0;n#div#0;n#div#6;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/web/dashboard/404.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="266">
-                  <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/bean/Item.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="133">
-                  <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/service/ItemService.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="554">
-                  <caret line="50" column="32" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
-                  <folding>
-                    <element signature="e#1256#1257#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/dao/ItemDao.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="88">
-                  <caret line="94" column="44" selection-start-line="94" selection-start-column="44" selection-end-line="94" selection-end-column="44" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/web/templates/js/search.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-19">
-                  <caret line="219" column="18" selection-start-line="219" selection-start-column="18" selection-end-line="219" selection-end-column="18" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/bean/Collection.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="114">
-                  <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/web/dashboard/member-add.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1136">
-                  <caret line="123" column="40" selection-start-line="122" selection-start-column="27" selection-end-line="123" selection-end-column="40" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/web/dashboard/static/h-ui/js/H-ui.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="198">
-                  <caret line="262" column="4" selection-start-line="262" selection-start-column="4" selection-end-line="262" selection-end-column="4" />
-                  <folding>
-                    <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dao/AccountDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="135" column="28" selection-start-line="135" selection-start-column="28" selection-end-line="135" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controller/ManageItemsServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="143" column="124" selection-start-line="143" selection-start-column="124" selection-end-line="143" selection-end-column="124" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controller/ManageUsersServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="33" column="54" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/dashboard/member-list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="31" column="38" lean-forward="true" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+              <folding>
+                <element signature="n#style#0;n#a#0;n#td#5;n#tr#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#1;n#td#5;n#tr#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1065" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/dashboard/friends-chat.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="43" column="14" lean-forward="true" selection-end-line="115" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/out/artifacts/web_project_war_exploded/dashboard/friends-chat.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="448">
+              <caret line="115" column="7" selection-start-line="115" selection-start-column="7" selection-end-line="115" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/dashboard/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-561" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/dashboard/welcome.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="16" column="58" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/out/artifacts/web_project_war_exploded/dashboard/member-list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+              <folding>
+                <element signature="n#style#0;n#a#0;n#td#6;n#tr#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#1;n#td#6;n#tr#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jsp File" />
-        <option value="Class" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -189,23 +890,25 @@
     <findStrings>
       <find>let</find>
       <find>code</find>
-      <find>var</find>
       <find>login</find>
       <find>/favicon.ico</find>
-      <find>id=&quot;&quot;</find>
-      <find>table-sort</find>
-      <find>form-member-add</find>
-      <find>form-article-add</find>
-      <find>req.getParameter</find>
-      <find>video</find>
+      <find>static/</find>
+      <find>/dashboard/</find>
+      <find>var</find>
+      <find>'</find>
+      <find>dashboard/</find>
+      <find>&amp;#xe6e2</find>
+      <find>Sys</find>
+      <find>张三</find>
     </findStrings>
     <replaceStrings>
       <replace>var</replace>
-      <replace>let</replace>
       <replace>register</replace>
       <replace>dashboard/favicon.ico</replace>
-      <replace>info.get</replace>
-      <replace>video2</replace>
+      <replace>dashboard/static/</replace>
+      <replace>/dashboard/</replace>
+      <replace>let</replace>
+      <replace>&quot;</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -214,57 +917,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/out/artifacts/web_project_war_exploded/templates/css/index.css" />
-        <option value="$PROJECT_DIR$/out/artifacts/web_project_war_exploded/templates/js/index.js" />
-        <option value="$PROJECT_DIR$/web/templates/js/index.js" />
-        <option value="$PROJECT_DIR$/web/templates/css/index.css" />
-        <option value="$PROJECT_DIR$/web/item.jsp" />
+        <option value="$PROJECT_DIR$/src/bean/Item.java" />
+        <option value="$PROJECT_DIR$/out/artifacts/web_project_war_exploded/dashboard/product-add.html" />
         <option value="$PROJECT_DIR$/web/header.inc.jsp" />
-        <option value="$PROJECT_DIR$/web/login.jsp" />
-        <option value="$PROJECT_DIR$/web/templates/css/login.css" />
-        <option value="$PROJECT_DIR$/out/artifacts/web_project_war_exploded/templates/css/login.css" />
-        <option value="$PROJECT_DIR$/out/artifacts/web_project_war_exploded/test.html" />
-        <option value="$PROJECT_DIR$/src/controller/LogoutServlet.java" />
-        <option value="$PROJECT_DIR$/web/templates/css/register.css" />
-        <option value="$PROJECT_DIR$/web/templates/js/message.inc.js" />
-        <option value="$PROJECT_DIR$/web/templates/js/all.js" />
+        <option value="$PROJECT_DIR$/web/search.jsp" />
+        <option value="$PROJECT_DIR$/web/dashboard/index.jsp" />
+        <option value="$PROJECT_DIR$/web/templates/js/item.js" />
+        <option value="$PROJECT_DIR$/web/templates/js/search.js" />
+        <option value="$PROJECT_DIR$/web/dashboard/friends-add-history.html" />
+        <option value="$PROJECT_DIR$/src/dao/ConnectionPool.java" />
+        <option value="$PROJECT_DIR$/out/artifacts/web_project_war_exploded/templates/js/all.js" />
         <option value="$PROJECT_DIR$/web/all.inc.jsp" />
         <option value="$PROJECT_DIR$/web/templates/js/login.js" />
-        <option value="$PROJECT_DIR$/out/artifacts/web_project_war_exploded/templates/js/register.js" />
-        <option value="$PROJECT_DIR$/web/register.jsp" />
         <option value="$PROJECT_DIR$/web/templates/js/register.js" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
-        <option value="$PROJECT_DIR$/web/dashboard/_header.html" />
-        <option value="$PROJECT_DIR$/out/artifacts/web_project_war_exploded/dashboard/index.html" />
-        <option value="$PROJECT_DIR$/src/controller/RegisterServlet.java" />
-        <option value="$PROJECT_DIR$/web/dashboard/templates/js/user-show.js" />
-        <option value="$PROJECT_DIR$/web/dashboard/user-show.jsp" />
-        <option value="$PROJECT_DIR$/web/dashboard/user-show.html" />
-        <option value="$PROJECT_DIR$/src/controller/ModifyUserServlet.java" />
-        <option value="$PROJECT_DIR$/web/templates/js/api/users.js" />
-        <option value="$PROJECT_DIR$/web/templates/js/api/index.js" />
+        <option value="$PROJECT_DIR$/web/templates/js/all.js" />
+        <option value="$PROJECT_DIR$/src/bean/Collection.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/web/dashboard/user-modify.html" />
-        <option value="$PROJECT_DIR$/web/test2.jsp" />
-        <option value="$PROJECT_DIR$/web/dashboard/index.jsp" />
+        <option value="$PROJECT_DIR$/web/templates/js/api/collections.js" />
+        <option value="$PROJECT_DIR$/src/service/CollectionService.java" />
+        <option value="$PROJECT_DIR$/src/bean/HomePage.java" />
         <option value="$PROJECT_DIR$/src/service/ItemService.java" />
-        <option value="$PROJECT_DIR$/web/dashboard/lib/datatables/1.10.0/jquery.dataTables.min.js" />
-        <option value="$PROJECT_DIR$/src/service/AccountService.java" />
-        <option value="$PROJECT_DIR$/web/dashboard/index.html" />
-        <option value="$PROJECT_DIR$/web/dashboard/user-add.html" />
-        <option value="$PROJECT_DIR$/src/bean/User.java" />
-        <option value="$PROJECT_DIR$/out/artifacts/web_project_war_exploded/dashboard/product-list.html" />
-        <option value="$PROJECT_DIR$/out/artifacts/web_project_war_exploded/dashboard/member-list.html" />
+        <option value="$PROJECT_DIR$/src/service/FriendService.java" />
+        <option value="$PROJECT_DIR$/web/collection.jsp" />
+        <option value="$PROJECT_DIR$/src/controller/FriendsManageServlet.java" />
+        <option value="$PROJECT_DIR$/out/artifacts/web_project_war_exploded/dashboard/member-show.html" />
         <option value="$PROJECT_DIR$/web/dashboard/member-add.html" />
-        <option value="$PROJECT_DIR$/src/controller/ManageUsersServlet.java" />
-        <option value="$PROJECT_DIR$/src/dao/AccountDao.java" />
-        <option value="$PROJECT_DIR$/web/dashboard/member-list.html" />
-        <option value="$PROJECT_DIR$/src/bean/Item.java" />
+        <option value="$PROJECT_DIR$/src/dao/CollectionDao.java" />
+        <option value="$PROJECT_DIR$/out/artifacts/web_project_war_exploded/dashboard/product-list.html" />
         <option value="$PROJECT_DIR$/web/dashboard/product-list.html" />
+        <option value="$PROJECT_DIR$/web/dashboard/user-show.html" />
+        <option value="$PROJECT_DIR$/web/dashboard/member-show.html" />
+        <option value="$PROJECT_DIR$/src/controller/CollectionServlet.java" />
+        <option value="$PROJECT_DIR$/out/artifacts/web_project_war_exploded/templates/js/collection.js" />
+        <option value="$PROJECT_DIR$/web/templates/js/collection.js" />
+        <option value="$PROJECT_DIR$/web/dashboard/friends-add.html" />
+        <option value="$PROJECT_DIR$/out/artifacts/web_project_war_exploded/dashboard/friends-add.html" />
+        <option value="$PROJECT_DIR$/web/templates/js/api/index.js" />
         <option value="$PROJECT_DIR$/src/controller/ManageItemsServlet.java" />
+        <option value="$PROJECT_DIR$/src/controller/ManageUsersServlet.java" />
         <option value="$PROJECT_DIR$/src/dao/ItemDao.java" />
-        <option value="$PROJECT_DIR$/web/templates/js/search.js" />
-        <option value="$PROJECT_DIR$/web/dashboard/product-add.html" />
+        <option value="$PROJECT_DIR$/web/dashboard/user-modify.html" />
+        <option value="$PROJECT_DIR$/out/artifacts/web_project_war_exploded/dashboard/user-modify.html" />
+        <option value="$PROJECT_DIR$/src/controller/ModifyUserServlet.java" />
+        <option value="$PROJECT_DIR$/src/dao/FriendDao.java" />
+        <option value="$PROJECT_DIR$/web/item.jsp" />
+        <option value="$PROJECT_DIR$/src/service/AccountService.java" />
+        <option value="$PROJECT_DIR$/src/dao/AccountDao.java" />
+        <option value="$PROJECT_DIR$/src/bean/User.java" />
+        <option value="$PROJECT_DIR$/out/artifacts/web_project_war_exploded/dashboard/member-list.html" />
+        <option value="$PROJECT_DIR$/web/dashboard/member-list.html" />
+        <option value="$PROJECT_DIR$/web/dashboard/friends-chat.html" />
+        <option value="$PROJECT_DIR$/out/artifacts/web_project_war_exploded/dashboard/friends-chat.html" />
       </list>
     </option>
   </component>
@@ -281,17 +984,29 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="30" />
-    <option name="y" value="15" />
-    <option name="width" value="1815" />
-    <option name="height" value="975" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="26" />
+    <option name="y" value="10" />
+    <option name="width" value="1944" />
+    <option name="height" value="1079" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="web_project" type="58d84e3e:PackageViewProjectNode" />
+              <item name="web_project" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -302,7 +1017,28 @@
             <path>
               <item name="web_project" type="b2602c69:ProjectViewProjectNode" />
               <item name="web_project" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web_project" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web_project" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="web_project_war_exploded" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web_project" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="web_project_war_exploded" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="web_project" type="b2602c69:ProjectViewProjectNode" />
@@ -330,12 +1066,6 @@
             <path>
               <item name="web_project" type="b2602c69:ProjectViewProjectNode" />
               <item name="web_project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web_project" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -355,13 +1085,6 @@
               <item name="web_project" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web_project" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -369,7 +1092,14 @@
               <item name="web_project" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="videos" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web_project" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="web_project" type="b2602c69:ProjectViewProjectNode" />
@@ -379,8 +1109,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -389,8 +1117,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563609169842" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib/commons-io-2.6.jar!/" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563903823503" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib/fastjson-1.2.58.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -401,21 +1129,25 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\asus\learn\Excellent software development\web_project\web\dashboard" />
       <recent name="C:\Users\asus\learn\Excellent software development\web_project\web" />
       <recent name="C:\Users\asus\learn\Excellent software development\web_project\web\rooter" />
       <recent name="C:\Users\asus\learn\Excellent software development\web_project\web\templates\img\art_img" />
       <recent name="C:\Users\asus\learn\Excellent software development\web_project\web\templates\img\web_img" />
-      <recent name="C:\Users\asus\learn\Excellent software development\web_project\web\templates" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="controller" />
+      <recent name="bean" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\asus\learn\Excellent software development\web_project\web" />
-      <recent name="C:\Users\asus\learn\Excellent software development\web_project\web\templates\img" />
-      <recent name="C:\Users\asus\learn\Excellent software development\web_project\out\artifacts\web_project_war_exploded" />
-      <recent name="C:\Users\asus\learn\Excellent software development\web_project\web\templates\img\web_img" />
-      <recent name="C:\Users\asus\learn\Excellent software development\web_project\web\templates\img\art_img" />
+      <recent name="C:\Users\asus\learn\Excellent software development\web_project\web\templates\js" />
+      <recent name="C:\Users\asus\learn\Excellent software development\web_project\web\templates\css" />
+      <recent name="C:\Users\asus\learn\Excellent software development\web_project\web\dashboard" />
+      <recent name="C:\Users\asus\learn\Excellent software development\web_project\out\artifacts\web_project_war_exploded\dashboard\static\h-ui.admin\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -444,7 +1176,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tomcat 8.5.35" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.13" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="Tomcat 8.5.35" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.35" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
       <deployment>
         <artifact name="web_project:war exploded">
           <settings>
@@ -545,8 +1278,15 @@
       <workItem from="1563495107087" duration="1448000" />
       <workItem from="1563503235244" duration="13996000" />
       <workItem from="1563532726296" duration="8446000" />
-      <workItem from="1563587727456" duration="16011000" />
-      <workItem from="1563682675600" duration="46611000" />
+      <workItem from="1563587727456" duration="44703000" />
+      <workItem from="1563670475664" duration="41838000" />
+      <workItem from="1563726414272" duration="8376000" />
+      <workItem from="1563755277561" duration="3710000" />
+      <workItem from="1563763908192" duration="4781000" />
+      <workItem from="1563778633705" duration="4109000" />
+      <workItem from="1563838659970" duration="4349000" />
+      <workItem from="1563863986134" duration="13702000" />
+      <workItem from="1563890740038" duration="12121000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1563177832445</created>
@@ -674,38 +1414,60 @@
       <option name="project" value="LOCAL" />
       <updated>1563536253488</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="登录页面完成">
+      <created>1563609206755</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1563609206756</updated>
+    </task>
+    <task id="LOCAL-00020" summary="登录页面完成">
+      <created>1563618224341</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1563618224344</updated>
+    </task>
+    <task id="LOCAL-00021" summary="TO BE OVER">
+      <created>1563679500069</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1563679500069</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="204128000" />
+    <option name="totallyTimeSpent" value="254713000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="22" y="8" width="1554" height="862" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18096514" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4973545" visible="true" weight="0.17780748" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" side_tool="true" />
+      <window_info id="Favorites" order="6" sideWeight="0.5026455" side_tool="true" weight="0.2945892" />
+      <window_info id="Web" order="7" sideWeight="0.50141644" side_tool="true" weight="0.2533512" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32577905" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.04249292" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32294616" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.26712328" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Application Servers" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.328125" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3295129" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32808024" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3286119" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.3295129" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="14" weight="0.3281471" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.0" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -717,29 +1479,29 @@
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1735925" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49858356" visible="true" weight="0.12825651" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" side_tool="true" />
+      <window_info id="Web" order="7" sideWeight="0.50141644" side_tool="true" weight="0.2533512" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32577905" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35977337" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32294616" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.16506189" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Application Servers" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.328125" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3295129" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32808024" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3286119" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.3295129" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="14" weight="0.3281471" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.0" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -766,363 +1528,383 @@
     <MESSAGE value="艺术品数据库修改" />
     <MESSAGE value="首页完成" />
     <MESSAGE value="登录页面完成" />
-    <MESSAGE value="管理页面完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="管理页面完成" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/controller/ManageUsersServlet.java</url>
-          <line>54</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="TO BE OVER" />
+    <option name="LAST_COMMIT_MESSAGE" value="TO BE OVER" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/controller/ModifyUserServlet.java" />
-    <entry file="file://$PROJECT_DIR$/web/dashboard/user-modify.html" />
-    <entry file="file://$PROJECT_DIR$/src/controller/RegisterServlet.java">
+    <entry file="file://$PROJECT_DIR$/web/dashboard/friends-list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
-        </state>
+        <state relative-caret-position="-816" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/test2.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+    <entry file="file://$PROJECT_DIR$/src/controller/ItemServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/dashboard/index.jsp" />
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3800">
-          <caret line="76" column="24" lean-forward="true" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/dashboard/admin-password-edit.html" />
-    <entry file="file://$PROJECT_DIR$/web/rooter/rooter.default.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/dashboard/lib/DD_belatedPNG_0.0.8a-min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/dashboard/lib/datatables/1.10.0/jquery.dataTables.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="127" column="465" lean-forward="true" selection-start-line="127" selection-start-column="465" selection-end-line="127" selection-end-column="465" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/templates/js/api/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/templates/js/api/collections.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/dashboard/user-show.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="45" column="7" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#dl#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#dd#0;n#dl#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/dashboard/user-list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-190">
-          <caret line="14" column="72" selection-start-line="14" selection-start-column="72" selection-end-line="14" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/dashboard/user-password-edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="46" column="22" lean-forward="true" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/dashboard/user-add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="32" column="60" lean-forward="true" selection-start-line="32" selection-start-column="60" selection-end-line="32" selection-end-column="62" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/templates/js/api/search.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="17" selection-start-column="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/templates/js/collection.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/collection.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-684" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/templates/js/api/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="8" selection-start-line="8" selection-end-line="21" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/dashboard/lib/layer/2.4/layer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="19595" selection-start-line="1" selection-start-column="19595" selection-end-line="1" selection-end-column="19595" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/dashboard/product-category-add.html" />
-    <entry file="file://$PROJECT_DIR$/web/dashboard/picture-add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="159" column="9" selection-start-line="159" selection-start-column="9" selection-end-line="159" selection-end-column="9" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#span#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/dashboard/static/h-ui.admin/js/H-ui.admin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="208" column="9" selection-start-line="208" selection-start-column="9" selection-end-line="208" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/web_project_war_exploded/dashboard/product-list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="141" column="38" selection-start-line="141" selection-start-column="38" selection-end-line="141" selection-end-column="38" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#td#2;n#tr#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#td#8;n#tr#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#td#8;n#tr#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/web_project/controller/ManageUsersServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-285">
-          <folding>
-            <element signature="e#0#3226#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/web_project_war_exploded/dashboard/member-list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-114">
-          <caret line="75" column="29" selection-start-line="75" selection-start-column="29" selection-end-line="75" selection-end-column="29" />
-          <folding>
-            <element signature="e#1234#1238#1" expanded="true" />
-            <element signature="e#1275#1279#1" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/AccountDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="24" column="61" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bean/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="77" selection-start-line="77" selection-end-line="77" />
-          <folding>
-            <element signature="e#1375#1376#0" expanded="true" />
-            <element signature="e#1407#1408#0" expanded="true" />
-            <element signature="e#1457#1458#0" expanded="true" />
-            <element signature="e#1499#1500#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/ManageUsersServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        <state relative-caret-position="340">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="31" column="42" lean-forward="true" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/service/AccountService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="57" column="48" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#269#270#0" expanded="true" />
-            <element signature="e#323#324#0" expanded="true" />
-            <element signature="e#364#365#0" expanded="true" />
-            <element signature="e#412#413#0" expanded="true" />
-            <element signature="e#1684#1685#0" expanded="true" />
-            <element signature="e#1732#1733#0" expanded="true" />
-            <element signature="e#1923#1924#0" expanded="true" />
-            <element signature="e#1973#1974#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/commons-fileupload-1.4.jar!/org/apache/commons/fileupload/servlet/ServletFileUpload.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ideaLibSources/commons-fileupload-1.4-sources.jar!/org/apache/commons/fileupload/servlet/ServletFileUpload.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="110" column="34" selection-start-line="110" selection-start-column="34" selection-end-line="110" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/bean/Item.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bean/Collection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
+        <state relative-caret-position="102">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.ideaLibSources/commons-fileupload-1.4-sources.jar!/org/apache/commons/fileupload/disk/DiskFileItem.java">
+    <entry file="file://$PROJECT_DIR$/out/artifacts/web_project_war_exploded/dashboard/member-show.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="350" column="18" selection-start-line="350" selection-start-column="18" selection-end-line="350" selection-end-column="18" />
+        <state relative-caret-position="438">
+          <caret line="100" column="98" selection-start-line="100" selection-start-column="98" selection-end-line="100" selection-end-column="98" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/dashboard/index.html">
+    <entry file="file://$PROJECT_DIR$/src/service/FriendService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="89" column="8" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ideaLibSources/commons-fileupload-1.4-sources.jar!/org/apache/commons/fileupload/FileItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="130" selection-start-line="130" selection-end-line="130" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/dashboard/lib/jquery.validation/1.14.0/jquery.validate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/templates/js/search.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-19">
-          <caret line="219" column="18" selection-start-line="219" selection-start-column="18" selection-end-line="219" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/ItemDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="94" column="44" selection-start-line="94" selection-start-column="44" selection-end-line="94" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/dashboard/product-list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="119" column="30" selection-start-line="119" selection-start-column="30" selection-end-line="119" selection-end-column="30" />
+        <state relative-caret-position="527">
+          <caret line="46" column="35" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
           <folding>
-            <element signature="n#style#0;n#a#0;n#td#2;n#tr#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#td#8;n#tr#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#td#8;n#tr#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/dashboard/static/h-ui/js/H-ui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="262" column="4" selection-start-line="262" selection-start-column="4" selection-end-line="262" selection-end-column="4" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="e#1624#1625#0" expanded="true" />
+            <element signature="e#1678#1679#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/service/ItemService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="50" column="32" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
+        <state relative-caret-position="663">
+          <caret line="65" column="27" selection-start-line="65" selection-start-column="27" selection-end-line="65" selection-end-column="27" />
           <folding>
-            <element signature="e#1256#1257#0" expanded="true" />
+            <element signature="e#339#340#0" expanded="true" />
+            <element signature="e#372#373#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/dashboard/product-add.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/templates/css/search.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/templates/js/search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="159" column="30" selection-start-line="159" selection-start-column="30" selection-end-line="159" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/search.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/dashboard/member-add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="122" column="16" selection-start-line="122" selection-start-column="16" selection-end-line="122" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/service/CollectionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="e#784#785#0" expanded="true" />
+            <element signature="e#844#845#0" expanded="true" />
+            <element signature="e#1070#1071#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/CollectionDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="78" column="30" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/web_project_war_exploded/dashboard/product-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="142" column="7" selection-start-line="142" selection-start-column="7" selection-end-line="142" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/dashboard/product-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="80" column="82" lean-forward="true" selection-start-line="80" selection-start-column="82" selection-end-line="80" selection-end-column="95" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#td#3;n#tr#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#td#5;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#td#5;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/collection.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-262">
+          <caret line="58" column="44" selection-start-line="58" selection-start-column="44" selection-end-line="58" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/dashboard/friends-add-history.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="130" column="19" lean-forward="true" selection-start-line="130" selection-start-column="19" selection-end-line="130" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/templates/js/api/collections.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/FriendsManageServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="43" column="16" lean-forward="true" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/CollectionServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="28" column="46" lean-forward="true" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/templates/js/message.inc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="47" lean-forward="true" selection-start-column="47" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/dashboard/member-show.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="19" column="80" selection-start-line="19" selection-start-column="80" selection-end-line="19" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/web_project_war_exploded/templates/js/collection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="38" selection-start-line="40" selection-end-line="40" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/web_project_war_exploded/dashboard/friends-add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="605">
+          <caret line="130" column="5" lean-forward="true" selection-start-line="130" selection-start-column="5" selection-end-line="130" selection-end-column="5" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#u#0;n#td#0;n#tr#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#u#0;n#td#0;n#tr#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#u#0;n#td#0;n#tr#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/dashboard/friends-add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="101" column="97" lean-forward="true" selection-start-line="101" selection-start-column="97" selection-end-line="101" selection-end-column="97" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#u#0;n#td#0;n#tr#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#u#0;n#td#0;n#tr#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#u#0;n#td#0;n#tr#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/templates/js/collection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="38" column="38" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/templates/js/item.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/web_project_war_exploded/dashboard/user-show.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-704" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/web_project_war_exploded/templates/js/api/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/templates/js/api/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/ItemDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="108" column="66" selection-start-line="108" selection-start-column="66" selection-end-line="108" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/web_project_war_exploded/dashboard/user-modify.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="148" column="7" selection-start-line="148" selection-start-column="7" selection-end-line="148" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/ModifyUserServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="45" column="106" selection-start-line="45" selection-start-column="106" selection-end-line="45" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/dashboard/user-modify.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2261">
+          <caret line="133" column="31" selection-start-line="133" selection-start-column="31" selection-end-line="133" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/dashboard/user-show.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-136">
+          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/FriendDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="64" column="92" selection-start-line="64" selection-start-column="92" selection-end-line="64" selection-end-column="92" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/item.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="38" column="59" selection-start-line="38" selection-start-column="59" selection-end-line="38" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/service/AccountService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+          <folding>
+            <element signature="e#268#269#0" expanded="true" />
+            <element signature="e#322#323#0" expanded="true" />
+            <element signature="e#736#737#0" expanded="true" />
+            <element signature="e#768#769#0" expanded="true" />
+            <element signature="e#874#875#0" expanded="true" />
+            <element signature="e#963#964#0" expanded="true" />
+            <element signature="e#1050#1051#0" expanded="true" />
+            <element signature="e#1086#1087#0" expanded="true" />
+            <element signature="e#1128#1129#0" expanded="true" />
+            <element signature="e#1178#1179#0" expanded="true" />
+            <element signature="e#1234#1235#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bean/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="124" column="27" lean-forward="true" selection-start-line="124" selection-start-column="27" selection-end-line="124" selection-end-column="27" />
+          <folding>
+            <element signature="e#2609#2610#0" expanded="true" />
+            <element signature="e#2641#2642#0" expanded="true" />
+            <element signature="e#2691#2692#0" expanded="true" />
+            <element signature="e#2733#2734#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/AccountDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="135" column="28" selection-start-line="135" selection-start-column="28" selection-end-line="135" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/ManageItemsServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="143" column="124" selection-start-line="143" selection-start-column="124" selection-end-line="143" selection-end-column="124" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/ManageUsersServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="33" column="54" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/dashboard/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-561" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/dashboard/welcome.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="16" column="58" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/web_project_war_exploded/dashboard/member-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#td#6;n#tr#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#td#6;n#tr#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/dashboard/member-list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="127" column="29" selection-start-line="127" selection-start-column="29" selection-end-line="127" selection-end-column="29" />
+        <state relative-caret-position="272">
+          <caret line="31" column="38" lean-forward="true" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
           <folding>
             <element signature="n#style#0;n#a#0;n#td#5;n#tr#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#1;n#td#5;n#tr#0;n#!!top" expanded="true" />
@@ -1130,38 +1912,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/dashboard/member-add.html">
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1136">
-          <caret line="123" column="40" selection-start-line="122" selection-start-column="27" selection-end-line="123" selection-end-column="40" />
+        <state relative-caret-position="-1065" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/dashboard/friends-chat.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="43" column="14" lean-forward="true" selection-end-line="115" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/dashboard/product-add.html">
+    <entry file="file://$PROJECT_DIR$/out/artifacts/web_project_war_exploded/dashboard/friends-chat.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2437">
-          <caret line="199" selection-start-line="199" selection-end-line="199" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#span#0;n#div#0;n#div#5;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#span#0;n#div#0;n#div#6;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/dashboard/404.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/ManageItemsServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="102" column="71" selection-start-line="102" selection-start-column="65" selection-end-line="102" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="448">
+          <caret line="115" column="7" selection-start-line="115" selection-start-column="7" selection-end-line="115" selection-end-column="7" />
         </state>
       </provider>
     </entry>

@@ -40,6 +40,9 @@ public class ModifyUserServlet extends HttpServlet {
         String signature = req.getParameter("signature");
         HttpSession session = req.getSession();
         User user = (User) req.getSession().getAttribute("user");
+        System.out.println("name:"+name);
+        if (name.equals(""))
+            name = user.getName();
         if(name != null && user!=null && pwd != null && pwd.equals(user.getPwd()) && accountService.updateUser(new User(user.getUserID(),name,pwd,email,signature,user.getPermission()))) {
             resp.setStatus(200);
             session.setAttribute("user",new User(user.getUserID(),name,pwd,email,signature,user.getPermission()));

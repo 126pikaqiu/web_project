@@ -25,4 +25,14 @@ public class CollectionService {
     public boolean delete(int userID, int itemID) {
         return delete(new Collection(userID,itemID));
     }
+    public boolean update(int userID, int itemID) {
+        return update(new Collection(userID,itemID));
+    }
+    private boolean update(Collection collection){
+        return collectionDao.update(collection);
+    }
+    public boolean getPermission(Collection collection) {
+        return collectionDao.getPermission(collection);
+    }
+
 }

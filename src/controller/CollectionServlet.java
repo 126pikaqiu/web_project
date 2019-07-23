@@ -28,6 +28,8 @@ public class CollectionServlet extends HttpServlet {
             success = collectionService.save(user.getUserID(),Integer.parseInt(itemID));
         } else if(user != null && "delete".equalsIgnoreCase(method)) {
             success = collectionService.delete(user.getUserID(),Integer.parseInt(itemID));
+        } else if(user != null && "update".equalsIgnoreCase(method)) {
+            success = collectionService.update(user.getUserID(),Integer.parseInt(itemID));
         }
         if(success) {
             resp.setStatus(200);

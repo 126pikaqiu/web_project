@@ -42,7 +42,6 @@ public class ManageItemsServlet extends HttpServlet {
         if (searchResult.getItems() != null) {
             resp.setStatus(200);
             OutputStream out = resp.getOutputStream();
-            System.out.println(JSON.toJSONString(searchResult));
             out.write(JSON.toJSONString(searchResult).getBytes(StandardCharsets.UTF_8));
         } else {
             resp.setStatus(400);
@@ -87,17 +86,14 @@ public class ManageItemsServlet extends HttpServlet {
                             File file = new File(uploadPath);
                             file.mkdirs();
                             randomImgName = uuid + suffix;
-                            System.out.println(fieldname + ":" + filename);
                             realFilename = randomImgName;
                         } else if (fieldname.equals("videoFile")) {
                             uploadPath = req.getServletContext().getRealPath("/templates/videos");
                             File file = new File(uploadPath);
                             file.mkdirs();
                             randomVideoName = uuid + suffix;
-                            System.out.println(fieldname + ":" + filename);
                             realFilename = randomVideoName;
                         } else {
-                            System.out.println("WTF");
                             continue;
                         }
                         item.write(new File(uploadPath, realFilename));
@@ -111,7 +107,6 @@ public class ManageItemsServlet extends HttpServlet {
 
         }
         String operation = info.get("operation");
-        System.out.println(operation);
         switch (operation) {
             case "add":
                 String name = new String(info.get("name").getBytes(StandardCharsets.ISO_8859_1), StandardCharsets.UTF_8);
@@ -126,7 +121,6 @@ public class ManageItemsServlet extends HttpServlet {
                 int time = Integer.parseInt(new String(info.get("time").getBytes(StandardCharsets.ISO_8859_1), StandardCharsets.UTF_8));
                 String location = new String(info.get("location").getBytes(StandardCharsets.ISO_8859_1), StandardCharsets.UTF_8);
                 String genre = new String(info.get("genre").getBytes(StandardCharsets.ISO_8859_1), StandardCharsets.UTF_8);
-                System.out.println(name + img + description + video + hot + time + location + genre);
                 if (itemService.save(new Item(name, img, description, video, hot, time, location, genre))) {
                     resp.setStatus(200);
                 } else {
@@ -148,7 +142,6 @@ public class ManageItemsServlet extends HttpServlet {
                 int time2 = Integer.parseInt(new String(info.get("time").getBytes(StandardCharsets.ISO_8859_1), StandardCharsets.UTF_8));
                 String location2 = new String(info.get("location").getBytes(StandardCharsets.ISO_8859_1), StandardCharsets.UTF_8);
                 String genre2 = new String(info.get("genre").getBytes(StandardCharsets.ISO_8859_1), StandardCharsets.UTF_8);
-                System.out.println(name2 + img2 + description2 + video2 + hot2 + time2 + location2 + genre2);
                 if (itemService.updateItem(new Item(id, name2, img2, description2, video2, hot2, time2, location2, genre2))) {
                     resp.setStatus(200);
                 } else {
