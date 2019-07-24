@@ -159,7 +159,7 @@ function search(page) {
     $.when(searchByOrder(data))
         .done(function (msg) {
             msg = eval("("+msg+")");
-            itemNum = msg["pageNum"];
+            itemNum = msg["itemNum"];
             msg = msg["items"];
             for (let i in msg) {
                 $($(".lay-item")[i]).attr("class", "lay-item");

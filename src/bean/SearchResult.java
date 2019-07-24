@@ -3,23 +3,24 @@ package bean;
 import java.util.ArrayList;
 
 /**
- * @ Author     ：Wang Shang.
- * @ Date       ：Created in 12:53 2019/7/20
- * @ Description：
- * @ Modified By：
- * @Version: $
+ * 搜索结果的JavaBean类
+ * items：搜索的结果
+ * itemNum：查询到的展品总数
+ * currentPageNum：当前返回结果的页面数
+ *
  */
 public class SearchResult {
     private ArrayList<Item> items;
-    private int pageNum;
+    private int itemNum;
     private int currentPageNum;
-    public SearchResult(){
+
+    public SearchResult() {
 
     }
 
-    public SearchResult(ArrayList<Item> items, int pageNum, int currentPageNum){
+    public SearchResult(ArrayList<Item> items, int itemNum, int currentPageNum) {
         this.items = items;
-        this.pageNum = pageNum;
+        this.itemNum = itemNum;
         this.currentPageNum = currentPageNum;
     }
 
@@ -31,12 +32,12 @@ public class SearchResult {
         this.items = items;
     }
 
-    public int getPageNum() {
-        return pageNum;
+    public int getItemNum() {
+        return itemNum;
     }
 
-    public void setPageNum(int pageNum) {
-        this.pageNum = pageNum;
+    public void setItemNum(int itemNum) {
+        this.itemNum = itemNum;
     }
 
     public int getCurrentPageNum() {

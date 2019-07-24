@@ -24,7 +24,7 @@
 <script type="text/javascript" src="lib/DD_belatedPNG_0.0.8a-min.js" ></script>
 <script>DD_belatedPNG.fix('*');</script>
 <![endif]-->
-<title>在线博物馆</title>
+<title>在线博物馆--控制台</title>
 </head>
 <body>
 <header class="navbar-wrapper">
@@ -88,8 +88,8 @@
 			<dt><i class="Hui-iconfont">&#xe62d;</i> 管理员管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a data-href="member-list.html" data-title="会员列表" href="javascript:;">会员列表</a></li>
-					<li><a data-href="product-list.html" data-title="产品管理" href="javascript:void(0)">展品管理</a></li>
+					<li><a data-href="member-list.html" data-title="会员管理" href="javascript:;">会员管理</a></li>
+					<li><a data-href="product-list.html" data-title="展品管理" href="javascript:void(0)">展品管理</a></li>
 				</ul>
 			</dd>
 		</dl>

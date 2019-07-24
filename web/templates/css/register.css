@@ -1,10 +1,16 @@
+body{
+    background-image: url("/templates/img/web_img/register.jpg");
+    background-repeat: no-repeat;
+}
 .register-form-group{
     margin: 10px auto!important;
+
 }
 .register-tip{
     margin: 0 auto!important;
 }
 .register-form{
+    background-color: rgba(0, 0, 0, 0.1);
     border: solid 3px #e3e4e5 ;
     padding: 30px 15px;
     margin: 40px auto;

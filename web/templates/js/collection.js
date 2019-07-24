@@ -30,14 +30,20 @@ function UpdateCollection(itemID) {
     $.when(updateCollection(data))
         .done(function () {
             showMessage("修改权限成功",1,800);
+            setTimeout(function () {
                 history.go(0);
+            },800);
         }).fail(function (res) {
         if(data["status"] == 200){
             showMessage("修改权限成功",1,800);
-            history.go(0);
+            setTimeout(function () {
+                history.go(0);
+            },800);
         } else {
             showMessage("修改权限失败",0,800);
-            history.go(0);
+            setTimeout(function () {
+                history.go(0);
+            },800);
         }
     })
 

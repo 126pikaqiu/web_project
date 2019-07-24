@@ -12,6 +12,11 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.nio.charset.StandardCharsets;
 
+/**
+ * 处理展品搜索的servlet类
+ * doPost获取资源请求的内容和页数，交由后台获取
+ *
+ */
 public class SearchServlet extends HttpServlet {
     private ItemService itemService;
 

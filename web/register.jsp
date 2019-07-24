@@ -5,7 +5,7 @@
   Time: 13:01
   To change this template use File | Settings | File Templates.
 --%>
-<% String fromUrl = session.getAttribute("url").toString(); %>
+<% String fromUrl = session.getAttribute("url")==null?"index.jsp":session.getAttribute("url").toString(); %>
 <% session.setAttribute("url","register.jsp"); %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>

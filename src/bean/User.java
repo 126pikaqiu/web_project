@@ -1,10 +1,25 @@
 package bean;
 
 /**
- * @author: jiaxing liu
- * @Date: 2019/7/16 23:51
+ * 用户的JavaBean类
+ * userID：用户的id
+ * name：用户名
+ * pwd：密码
+ * email：用户邮箱
+ * permission：用户的权限
+ * signature：个性签名
+ * lastLogin：用户最近一次登录时间
+ *
  */
 public class User {
+    private int userID;
+    private String name;
+    private String pwd;
+    private String email;
+    private int permission;
+    private String signature;
+    private String lastLogin;
+
     public int getUserID() {
         return userID;
     }
@@ -45,27 +60,6 @@ public class User {
         this.permission = permission;
     }
 
-    public User(int userID, String name, String pwd, String email, int permission) {
-        this.userID = userID;
-        this.name = name;
-        this.pwd = pwd;
-        this.email = email;
-        this.permission = permission;
-    }
-
-    private int userID;
-
-    public User(String name, String pwd, String email, int permission) {
-        this.name = name;
-        this.pwd = pwd;
-        this.email = email;
-        this.permission = permission;
-    }
-
-    private String name;
-    private String pwd;
-    private String email;
-    private int permission;
 
     public String getSignature() {
         return signature;
@@ -73,41 +67,6 @@ public class User {
 
     public void setSignature(String signature) {
         this.signature = signature;
-    }
-
-    public User(String name, String pwd, String email,String signature, int permission) {
-        this.name = name;
-        this.pwd = pwd;
-        this.email = email;
-        this.signature = signature;
-        this.permission = permission;
-    }
-
-    public User(int userID, String name, String pwd, String email, String signature) {
-        this.userID = userID;
-        this.name = name;
-        this.pwd = pwd;
-        this.email = email;
-        this.signature = signature;
-    }
-    public User(int userID, String name, String pwd, String email, String signature,int permission) {
-        this.userID = userID;
-        this.name = name;
-        this.pwd = pwd;
-        this.email = email;
-        this.signature = signature;
-        this.permission = permission;
-    }
-
-    private String signature;
-    public User(){}
-    public User(User user){
-        this.userID = user.userID;
-        this.name = user.name;
-        this.pwd = user.pwd;
-        this.email = user.email;
-        this.signature = user.signature;
-        this.permission = user.permission;
     }
 
     public String getLastLogin() {
@@ -128,12 +87,64 @@ public class User {
         this.lastLogin = lastLogin;
     }
 
-    private String lastLogin;
+    public User(int userID, String name, String pwd, String email, String signature, int permission) {
+        this.userID = userID;
+        this.name = name;
+        this.pwd = pwd;
+        this.email = email;
+        this.signature = signature;
+        this.permission = permission;
+    }
+
+    public User(String name, String pwd, String email, String signature, int permission) {
+        this.name = name;
+        this.pwd = pwd;
+        this.email = email;
+        this.signature = signature;
+        this.permission = permission;
+    }
+
+    public User(int userID, String name, String pwd, String email, String signature) {
+        this.userID = userID;
+        this.name = name;
+        this.pwd = pwd;
+        this.email = email;
+        this.signature = signature;
+    }
+
+    public User(int userID, String name, String pwd, String email, int permission) {
+        this.userID = userID;
+        this.name = name;
+        this.pwd = pwd;
+        this.email = email;
+        this.permission = permission;
+    }
+
+
+    public User(String name, String pwd, String email, int permission) {
+        this.name = name;
+        this.pwd = pwd;
+        this.email = email;
+        this.permission = permission;
+    }
+
+    public User(User user) {
+        this.userID = user.userID;
+        this.name = user.name;
+        this.pwd = user.pwd;
+        this.email = user.email;
+        this.signature = user.signature;
+        this.permission = user.permission;
+    }
+
+
+    public User() {
+    }
 
 
     @Override
     public boolean equals(Object obj) {
-        if(obj instanceof User && userID == ((User) obj).userID){
+        if (obj instanceof User && userID == ((User) obj).userID) {
             return true;
         }
         return false;

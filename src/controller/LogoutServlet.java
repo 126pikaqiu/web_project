@@ -8,8 +8,9 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 /**
- * @author: jiaxing liu
- * @Date: 2019/7/17 20:35
+ * 处理登出操作的servlet类
+ * 仅修改session
+ *
  */
 public class LogoutServlet extends HttpServlet {
     /**

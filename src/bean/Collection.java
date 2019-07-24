@@ -1,10 +1,29 @@
 package bean;
 
 /**
- * @author: jiaxing liu
- * @Date: 2019/7/17 23:49
+ * 收藏品的JavaBean类
+ * userID:用户的id
+ * itemID:收藏品的id
+ * permission:收藏品权限
+ *
  */
 public class Collection {
+    private int userID;
+    private int itemID;
+    private int permission;
+
+    public Collection(int userID, int itemID) {
+        this.userID = userID;
+        this.itemID = itemID;
+    }
+
+
+    public Collection(int userID, int itemID, int permission) {
+        this.userID = userID;
+        this.itemID = itemID;
+        this.permission = permission;
+    }
+
     public int getUserID() {
         return userID;
     }
@@ -21,19 +40,6 @@ public class Collection {
         this.itemID = itemID;
     }
 
-    public Collection(int userID, int itemID) {
-        this.userID = userID;
-        this.itemID = itemID;
-    }
-
-    private int userID;
-    private int itemID;
-
-    public Collection(int userID, int itemID, int permission) {
-        this.userID = userID;
-        this.itemID = itemID;
-        this.permission = permission;
-    }
 
     public int getPermission() {
         return permission;
@@ -43,13 +49,12 @@ public class Collection {
         this.permission = permission;
     }
 
-    private int permission;
 
     @Override
     public boolean equals(Object obj) {
-        if(!(obj instanceof Collection)) {
+        if (!(obj instanceof Collection)) {
             return false;
         }
-        return itemID==((Collection) obj).getItemID() && userID == ((Collection) obj).getUserID();
+        return itemID == ((Collection) obj).getItemID() && userID == ((Collection) obj).getUserID();
     }
 }

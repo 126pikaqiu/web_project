@@ -22,11 +22,10 @@ import java.util.Map;
 import java.util.UUID;
 
 /**
- * @ Author     ：Wang Shang.
- * @ Date       ：Created in 13:39 2019/7/20
- * @ Description：
- * @ Modified By：
- * @Version: $
+ * 管理员管理展品的servlet类
+ * doGet获取所有展品的信息
+ * doPost对展品进行增删改的操作
+ *
  */
 public class ManageItemsServlet extends HttpServlet {
     private ItemService itemService;
@@ -38,6 +37,12 @@ public class ManageItemsServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        Integer user_permission = (Integer) req.getSession().getAttribute("permission");
+        if(user_permission == null || user_permission != 2){
+            resp.setStatus(401);
+            return;
+        }
+        //利用之前写的搜索的接口，无查询键无排序获得所有展品，包装一下为原来的接口增添一个allpage方便拿到所有信息
         SearchResult searchResult = itemService.getItemsByOrder("", "", 1, true);
         if (searchResult.getItems() != null) {
             resp.setStatus(200);
@@ -50,9 +55,16 @@ public class ManageItemsServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        Integer user_permission = (Integer) req.getSession().getAttribute("permission");
+        if(user_permission == null || user_permission != 2){
+            resp.setStatus(401);
+            return;
+        }
+        //判断post的类型，multypart/form-data不能用getParameter获取参数
         String contentType = req.getContentType();
         //创建一个map存储属性名和属性值
         Map<String, String> info = new HashMap<>();
+        //为了避免文件重复，如果用户有上传文件使用随机文件名
         String randomImgName = null;
         String randomVideoName = null;
         if (contentType != null && contentType.contains("multipart/form-data")) {
@@ -66,11 +78,12 @@ public class ManageItemsServlet extends HttpServlet {
             try {
                 List<FileItem> fileItems = upload.parseRequest(req);
                 for (FileItem item : fileItems) {
-                    if (item.isFormField()) {
+                    if (item.isFormField()) {//文本输入记录键值对
                         String name = item.getFieldName();
                         String value = item.getString();
                         info.put(name, value);
-                    } else {
+                    } else {//文件输入
+                        //获取文件名和表项名
                         String filename = item.getName();
                         String fieldname = item.getFieldName();
                         if (filename == null || filename.equals(""))
@@ -81,13 +94,13 @@ public class ManageItemsServlet extends HttpServlet {
                         String suffix = filename.substring(filename.lastIndexOf("."));
                         String uploadPath = "";
                         String realFilename = "";
-                        if (fieldname.equals("imgFile")) {
+                        if (fieldname.equals("imgFile")) {//上传图片
                             uploadPath = req.getServletContext().getRealPath("/templates/img/art_img");
                             File file = new File(uploadPath);
                             file.mkdirs();
                             randomImgName = uuid + suffix;
                             realFilename = randomImgName;
-                        } else if (fieldname.equals("videoFile")) {
+                        } else if (fieldname.equals("videoFile")) {//上传视频
                             uploadPath = req.getServletContext().getRealPath("/templates/videos");
                             File file = new File(uploadPath);
                             file.mkdirs();
@@ -103,12 +116,14 @@ public class ManageItemsServlet extends HttpServlet {
                 e.printStackTrace();
             }
         } else {
+            //一般表单用getParameter获取参数
             info.put("operation", req.getParameter("operation"));
 
         }
         String operation = info.get("operation");
         switch (operation) {
-            case "add":
+            case "add"://增
+                //获取所有展品输入信息，以下格式为了避免中文乱码
                 String name = new String(info.get("name").getBytes(StandardCharsets.ISO_8859_1), StandardCharsets.UTF_8);
                 String img = randomImgName != null ? randomImgName : new String(info.get("img").getBytes(StandardCharsets.ISO_8859_1), StandardCharsets.UTF_8);
                 img = img.contains("\\") ? img.substring(img.lastIndexOf("\\") + 1) : img;
@@ -121,13 +136,15 @@ public class ManageItemsServlet extends HttpServlet {
                 int time = Integer.parseInt(new String(info.get("time").getBytes(StandardCharsets.ISO_8859_1), StandardCharsets.UTF_8));
                 String location = new String(info.get("location").getBytes(StandardCharsets.ISO_8859_1), StandardCharsets.UTF_8);
                 String genre = new String(info.get("genre").getBytes(StandardCharsets.ISO_8859_1), StandardCharsets.UTF_8);
+                //储存
                 if (itemService.save(new Item(name, img, description, video, hot, time, location, genre))) {
                     resp.setStatus(200);
                 } else {
                     resp.setStatus(401);
                 }
                 break;
-            case "change":
+            case "change"://改
+                //获取所有展品输入信息，以下格式为了避免中文乱码
                 int id = Integer.parseInt(info.get("id"));
                 String name2 = new String(info.get("name").getBytes(StandardCharsets.ISO_8859_1), StandardCharsets.UTF_8);
                 String img2 = randomImgName != null ? randomImgName : new String(info.get("img").getBytes(StandardCharsets.ISO_8859_1), StandardCharsets.UTF_8);
@@ -142,13 +159,14 @@ public class ManageItemsServlet extends HttpServlet {
                 int time2 = Integer.parseInt(new String(info.get("time").getBytes(StandardCharsets.ISO_8859_1), StandardCharsets.UTF_8));
                 String location2 = new String(info.get("location").getBytes(StandardCharsets.ISO_8859_1), StandardCharsets.UTF_8);
                 String genre2 = new String(info.get("genre").getBytes(StandardCharsets.ISO_8859_1), StandardCharsets.UTF_8);
+                //修改
                 if (itemService.updateItem(new Item(id, name2, img2, description2, video2, hot2, time2, location2, genre2))) {
                     resp.setStatus(200);
                 } else {
                     resp.setStatus(401);
                 }
                 break;
-            case "delete":
+            case "delete"://删
                 int id2 = Integer.parseInt(req.getParameter("id"));
                 if (itemService.deleteItem(id2)) {
                     resp.setStatus(200);

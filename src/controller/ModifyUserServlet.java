@@ -14,8 +14,10 @@ import java.io.OutputStream;
 import java.nio.charset.StandardCharsets;
 
 /**
- * @author: jiaxing liu
- * @Date: 2019/7/20 14:08
+ * 修改自己个人信息的servlet类
+ * doGet获得自己的所有信息，但是不能获取密码
+ * doPost修改个人信息
+ *
  */
 public class ModifyUserServlet extends HttpServlet {
     private AccountService accountService;
@@ -26,7 +28,6 @@ public class ModifyUserServlet extends HttpServlet {
     }
 
     /**
-     * to handle login
      * @param req request
      * @param resp response
      * @throws ServletException
@@ -40,7 +41,7 @@ public class ModifyUserServlet extends HttpServlet {
         String signature = req.getParameter("signature");
         HttpSession session = req.getSession();
         User user = (User) req.getSession().getAttribute("user");
-        System.out.println("name:"+name);
+        //可以不修改用户名
         if (name.equals(""))
             name = user.getName();
         if(name != null && user!=null && pwd != null && pwd.equals(user.getPwd()) && accountService.updateUser(new User(user.getUserID(),name,pwd,email,signature,user.getPermission()))) {
@@ -52,7 +53,6 @@ public class ModifyUserServlet extends HttpServlet {
     }
 
     /**
-     * to handle login
      * @param req request
      * @param resp response
      * @throws ServletException

@@ -12,28 +12,33 @@ import java.util.ArrayList;
  */
 public class ItemService {
     private ItemDao itemDao;
+
     public void init() {
         itemDao = new ItemDao();
         itemDao.init();
     }
-    public void destroy(){
+
+    public void destroy() {
         itemDao.destroy();
     }
-    public ArrayList<Item>  getItems(int userID,int permission) {
-        return itemDao.getItems(userID,permission);
+
+    public ArrayList<Item> getItems(int userID, int permission) {
+        return itemDao.getItems(userID, permission);
     }
-    public ArrayList<Item>  getItems(int userID) {
+
+    public ArrayList<Item> getItems(int userID) {
         return itemDao.getItems(userID);
     }
+
     public Item getItem(int itemID) {
         return itemDao.getItem(itemID);
     }
 
-    public ArrayList<Item> getLatest(){
+    public ArrayList<Item> getLatest() {
         return itemDao.getLatest();
     }
 
-    public ArrayList<Item> getHottest(){
+    public ArrayList<Item> getHottest() {
         return itemDao.getHottest();
     }
 
@@ -48,6 +53,7 @@ public class ItemService {
     public SearchResult getItemsByOrder(String searchKey, String order, int page, boolean allpage) {
         return itemDao.getItemsByOrder(searchKey, order, page, allpage);
     }
+
     public boolean updateItem(Item item) {
         return itemDao.updateItem(item);
     }
@@ -55,14 +61,16 @@ public class ItemService {
     public boolean deleteItem(int id) {
         return itemDao.deleteItem(id);
     }
-    public boolean save(Item item){
+
+    public boolean save(Item item) {
         return itemDao.save(item);
     }
 
-    public ArrayList<Item> getSimilar(Item item,int count) {
-        return itemDao.getSimilar(item,count);
+    public ArrayList<Item> getSimilar(Item item, int count) {
+        return itemDao.getSimilar(item, count);
     }
-    public ArrayList<Item> getRecommends(Item item,int userID, int count) {
-        return itemDao.getRecommends(item,userID,count);
+
+    public ArrayList<Item> getRecommends(Item item, int userID, int count) {
+        return itemDao.getRecommends(item, userID, count);
     }
 }

@@ -12,8 +12,9 @@ import java.io.IOException;
 
 
 /**
- * @author: jiaxing liu
- * @Date: 2019/7/15 16:06
+ * 处理用户注册的servlet类
+ * 和修改个人信息很像，直接上传
+ *
  */
 public class RegisterServlet extends HttpServlet {
     private AccountService accountService;
@@ -24,7 +25,7 @@ public class RegisterServlet extends HttpServlet {
     }
 
     /**
-     * to handle login
+     * to handle logup
      * @param req request
      * @param resp response
      * @throws ServletException
